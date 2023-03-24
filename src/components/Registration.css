@@ -1,0 +1,62 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+.form{
+    width: 50%;
+}
+.registration{
+    color: rgba(192, 92, 21, 0.6);
+    text-align: center;
+}
+.form_container{
+    font-size: 20px;
+    line-height: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    border: 2px solid rgb(99, 221, 230);
+    background-color: rgb(99, 221, 230);
+    border-radius: 7px;
+    height: 1.7em;
+    width: 400px
+}
+
+form > div{
+    margin: 1em auto;
+}
+.name > label > input{
+    margin-left: 80px;
+}
+.Email_Id > label > input{
+    margin-left: 62px;
+}
+
+.College_name > label > input{
+    margin-left: 8px;
+}
+.year_of_study > label > input{
+    margin-left: 15px;
+}
+.payment_id > label > input{
+    margin-left: 33px;
+}
+
+.dual_booted{
+    display: flex;
+    flex-direction: row;
+}
+.form_img{
+    height: 400px;
+    width: 400px;
+    margin-top: 140px;
+}
+.dual_booted > input{
+    width: 80px;
+    font-size: 10px;
+}
+.form{
+    margin-left: 5em;
+}

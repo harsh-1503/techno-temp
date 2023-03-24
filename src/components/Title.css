@@ -1,0 +1,37 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title_container{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin: 10px;
+}
+.title{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+.img1,.img2{
+    /* display: block; */
+    width: 400px;
+    height: 400px;
+    margin-top: 150px;
+    /* position: relative; */
+    
+}
+
+.presents{
+    font-size: 20px;
+}
+
+.techno_heading{
+    font-size: 80px;
+    color: rgba(122, 52, 16, 0.4);
+}
+
+.extra{
+    height: 100vh;
+}
