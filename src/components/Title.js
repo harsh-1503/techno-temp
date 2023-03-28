@@ -1,37 +1,63 @@
-import React from "react";
+import React from 'react'
 // import { ParallaxLayer } from "@react-spring/web";
-import { Parallax } from "react-parallax";
-import img1 from "../images/bg2.jpg";
-import img2 from "../images/bg3.jpg";
-import "./Title.css";
-
+// import { Parallax } from 'react-parallax'
+import { useState, useEffect } from 'react'
+import img1 from '../images/bg2.jpg'
+import img2 from '../images/bg3.jpg'
+import './Title.css'
 
 function Title() {
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const threshold = 200 // adjust this to control where the element stops
+  const factor = 4
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  const translateY = scrollPosition > threshold ? scrollPosition - threshold : 0
+
   return (
     <>
-      <div className="title_container">
-      <Parallax strength={-500}>
-          <div className="img1">
-            <img src={img1} alt="bg1" />
-          </div>
-        </Parallax>
-
-        <Parallax strength={500}>
-        <div className="title">
-          Walchand Linux User's Group
-          <br />
-          <p className="presents">Presents</p>
-          <div className="techno_heading">TechnoTweet 2k23</div>
+      <div className='title_container h-screen'>
+        <div
+          className='img1'
+          style={{ transform: `translateY(${translateY * factor}px)` }}
+        >
+          <img src={img1} alt='bg1' />
         </div>
-        </Parallax>
-        <Parallax strength={-500}>
-          <div className="img2">
-            <img src={img2} alt="bg2" />
+
+        <div
+          className='title mx-20 font-semibold'
+          style={{ transform: `translateY(-${translateY * factor}px)` }}
+        >
+          Walchand Linux Users' Group
+          <br />
+          <p className='presents'>Presents</p>
+          <div
+            className='techno_heading'
+            style={{ fontFamily: "'Russo One', sans-serif" }}
+          >
+            TechnoTweet 2k23
           </div>
-        </Parallax>
+        </div>
+        <div
+          className='img2'
+          style={{ transform: `translateY(${translateY * factor}px)` }}
+        >
+          <img src={img2} alt='bg2' />
+        </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Title;
+export default Title
