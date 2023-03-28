@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './Registration.css'
-import img1 from '../images/bg2.jpg'
-import img2 from '../images/bg3.jpg'
+import img1 from '../images/qr1.jpeg'
+import img2 from '../images/qr2.jpeg'
+import wlug_logo from '../images/WLUG.png'
 
 // import Axios from "axios"
 
@@ -35,65 +36,74 @@ function Registration() {
   // }
   return (
     <>
-      <div className='whole container mt-5  p-5 w-lg-50 shadow-lg'>
-        <h2 className='text-center text-warning h1 '>Registration Form</h2>
-        <form>
-          <div className='form-group'>
-            <label for='exampleInputPassword1'>Name:</label>
+      <div className='w-full mt-5 p-5 w-lg-50'>
+        <div className='upperDiv'>
+          <h2 style={{ visibility: 'hidden' }}>Nothing</h2>
+          <h2 className='text-center text-warning h1 font-semibold'>
+            Registration Form
+          </h2>
+          <img src={wlug_logo} alt='' style={{ height: '3.5rem' }} />
+        </div>
+
+        <form className='w-1/2 m-10'>
+          <div className='form-group border-none flex my-4'>
+            <label for='exampleInputPassword1' className='basis-1/5 text-xl'>
+              Name:
+            </label>
             <input
               type='text'
               name='name'
-              className='form-control'
+              className='form-control ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
               id='exampleInputPassword1'
-              placeholder='Harsh Karwa'
               required
             />
           </div>
-          <div className='form-group'>
-            <label for='exampleInputEmail1'>Email ID</label>
+          <div className='form-group border-none flex my-4'>
+            <label for='exampleInputEmail1' className='basis-1/5 text-xl'>
+              Email ID:
+            </label>
             <input
               type='email'
               name='email'
-              className='form-control'
+              className='form-control  ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
               id='exampleInputEmail1'
-              placeholder='Email'
               required
             />
-            <small id='emailHelp' className='form-text text-muted'>
-              We'll never share your email with anyone else.
-            </small>
           </div>
-          <div className='form-group'>
-            <label for='collegeName'>Phone No:</label>
+
+          <div className='form-group border-none flex flex-row my-4'>
+            <label for='collegeName' className='basis-1/5 text-xl'>
+              Phone No:
+            </label>
             <input
               type='number'
               name='phoneno'
-              className='form-control'
+              className='form-control  ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
               id='collegeName'
               aria-describedby='emailHelp'
               required
             />
           </div>
 
-          <div className='form-group'>
-            <label for='collegeName'>College Name:</label>
+          <div className='form-group border-none flex my-4'>
+            <label for='collegeName' className='basis-1/5 text-xl'>
+              College Name:
+            </label>
             <input
               type='text'
               name='collegeName'
-              className='form-control'
+              className='form-control  ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
               id='collegeName'
               aria-describedby='emailHelp'
               required
             />
           </div>
-          <div className='input-group mb-3'>
-            <div className='input-group-prepend'>
-              <label className='input-group-text' for='iyearOfStudy'>
-                Year of Study
-              </label>
-            </div>
+          <div className='input-group mb-3 my-4'>
+            <label className='basis-1/5 text-xl' for='iyearOfStudy'>
+              Year of Study:
+            </label>
             <select
-              className='custom-select'
+              className='custom-select ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
               id='yearOfStudy'
               name='yearOfStudy'
               required
@@ -104,27 +114,13 @@ function Registration() {
               <option value='3'>Fourth Year</option>
             </select>
           </div>
-          <div className='form-group'>
-            <label for='paymentID'>Transaction ID:</label>
-            <input
-              type='text'
-              name='transactionId'
-              className='form-control'
-              id='paymentID'
-              aria-describedby='emailHelp'
-              required
-            />
-          </div>
 
-          <div className='input-group mb-3'>
-            <div className='input-group-prepend'>
-              <label className='input-group-text' for='inputGroupSelect01'>
-                Select Course
-              </label>
-            </div>
-
+          <div className='input-group mb-3 my-4'>
+            <label className='basis-1/5 text-xl' for='inputGroupSelect01'>
+              Select Course:
+            </label>
             <select
-              className='custom-select'
+              className='custom-select ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9] '
               id='inputGroupSelect01'
               name='course'
               onChange={handleQR}
@@ -132,8 +128,48 @@ function Registration() {
             >
               <option value='1'>Frontend</option>
               <option value='2'>Backend</option>
-              <option value='3'>Both</option>
+              <option value='3' selected>
+                Both
+              </option>
             </select>
+          </div>
+          <div className='form-group border-none flex my-4'>
+            <label for='paymentID' className='basis-1/5 text-xl '>
+              Transaction ID:
+            </label>
+            <input
+              type='text'
+              name='transactionId'
+              className='form-control ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
+              id='paymentID'
+              aria-describedby='emailHelp'
+              required
+            />
+          </div>
+          <div className='mb-10 mt-3'>
+            <label for='dualBootedLaptop' className='text-xl mr-5'>
+              Do you have dual booted laptop?
+            </label>
+            <label for='yes' className='text-xl mr-5'>
+              <input
+                type='radio'
+                id='yes'
+                name='answer'
+                value='yes'
+                className='mr-2'
+              />
+              Yes
+            </label>
+            <label for='no' className='text-xl'>
+              <input
+                type='radio'
+                id='no'
+                name='answer'
+                value='no'
+                className='mr-2'
+              />
+              No
+            </label>
           </div>
           <h5 className='text-center font-weight-bold'>
             Scan this QR code to make the payment
@@ -145,9 +181,6 @@ function Registration() {
           </button>
         </form>
       </div>
-      {/* <div className='form_img'>
-             <img src={img1} alt="form_img"/>
-        </div> */}
     </>
   )
 }
