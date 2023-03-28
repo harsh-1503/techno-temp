@@ -2,13 +2,13 @@ import React from 'react'
 // import { ParallaxLayer } from "@react-spring/web";
 // import { Parallax } from 'react-parallax'
 import { useState, useEffect } from 'react'
-import img1 from '../images/bg2.jpg'
-import img2 from '../images/bg3.jpg'
+import img1 from '../images/techno1-removebg-preview.png'
+import img2 from '../images/techno12.png'
 import './Title.css'
 
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
-  const threshold = 200 // adjust this to control where the element stops
+  const threshold = 300 // adjust this to control where the element stops
   const factor = 4
 
   useEffect(() => {

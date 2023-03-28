@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Registration.css'
+<<<<<<< HEAD
 import img1 from '../images/bg2.jpg'
 import img2 from '../images/bg3.jpg'
 
@@ -9,6 +10,10 @@ import img2 from '../images/bg3.jpg'
 
 
 
+=======
+import img1 from '../images/form1-removebg-preview.png'
+import wlug_logo from '../images/WLUG.png'
+>>>>>>> d41006c6 (Added resources and styling)
 
 function Registration() {
 
@@ -41,6 +46,7 @@ function Registration() {
     // }
   return (
     <>
+<<<<<<< HEAD
         <div className="whole container mt-5  p-5 w-lg-50 shadow-lg">    
             <h2 className="text-center text-warning h1 ">Registration Form</h2>
             <form  >
@@ -149,6 +155,62 @@ function Registration() {
              <img src={img1} alt="form_img"/>
         </div> */}
       
+=======
+      <div className='registration'>
+        <h1 style={{ visibility: 'hidden' }}>Nothing</h1>
+        <h1 className='font-semibold'>Registration</h1>
+        <img src={wlug_logo} alt='' className='h-14 text-right' />
+      </div>
+
+      <div className='form_container'>
+        <div className='form'>
+          <form>
+            <div className='name'>
+              <label for='name'>
+                Name:
+                <input type='text' name='name' required />
+              </label>
+            </div>
+            <div className='Email_Id'>
+              <label>
+                Email Id:
+                <input type='text' required />
+              </label>
+            </div>
+            <div className='College_name'>
+              <label>
+                College Name:
+                <input type='text' required />
+              </label>
+            </div>
+            <div className='year_of_study'>
+              <label>
+                Year of Study:
+                <input type='text' required />
+              </label>
+            </div>
+            <div className='payment_id'>
+              <label>
+                Payment Id:
+                <input type='text' required />
+              </label>
+            </div>
+            <div className='dual_booted'>
+              <p>DO you have a dual booted laptop:</p>
+              <input type='radio' id='html' name='dual_booted' value='YES' />
+              <label for='html'>YES</label>
+              <br />
+              <input type='radio' id='css' name='dual_booted' value='NO' />
+              <label for='css'>NO</label>
+              <br />
+            </div>
+          </form>
+        </div>
+        <div className='form_img'>
+          <img src={img1} alt='form_img' />
+        </div>
+      </div>
+>>>>>>> d41006c6 (Added resources and styling)
     </>
   )
 }

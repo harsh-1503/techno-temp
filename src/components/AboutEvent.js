@@ -6,7 +6,7 @@ function AboutEvent() {
   return (
     <section id='experience'>
       <h1 className='font-semibold'>About The Event</h1>
-      <h4 className='mx-20 mb-10'>
+      <h4 className='mx-20 mb-10 font-medium text-[1.2rem]'>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -27,37 +27,37 @@ function AboutEvent() {
             <div className='frontend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>HTML</h4>
+                <h4 className='ml-2 text-[1.2rem]'>HTML</h4>
               </div>
             </div>
             <div className='frontend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>CSS</h4>
+                <h4 className='ml-2 text-[1.2rem]'>CSS</h4>
               </div>
             </div>
             <div className='frontend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>JavaScript</h4>
+                <h4 className='ml-2 text-[1.2rem]'>JavaScript</h4>
               </div>
             </div>
             <div className='frontend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>React JS</h4>
+                <h4 className='ml-2 text-[1.2rem]'>React JS</h4>
               </div>
             </div>
             <div className='frontend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>BootStrap</h4>
+                <h4 className='ml-2 text-[1.2rem]'>BootStrap</h4>
               </div>
             </div>
             <div className='frontend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>Tailwind</h4>
+                <h4 className='ml-2 text-[1.2rem]'>Tailwind</h4>
               </div>
             </div>
           </div>
@@ -70,31 +70,31 @@ function AboutEvent() {
             <div className='backend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>Node JS</h4>
+                <h4 className='ml-2 text-[1.2rem]'>Node JS</h4>
               </div>
             </div>
             <div className='backend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>MongoDB</h4>
+                <h4 className='ml-2 text-[1.2rem]'>MongoDB</h4>
               </div>
             </div>
             <div className='backend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>MySQL</h4>
+                <h4 className='ml-2 text-[1.2rem]'>MySQL</h4>
               </div>
             </div>
             <div className='backend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>PHP</h4>
+                <h4 className='ml-2 text-[1.2rem]'>PHP</h4>
               </div>
             </div>
             <div className='backend_stack_content'>
               <BsPatchCheckFill />
               <div className='iconless'>
-                <h4 className='ml-2'>Python</h4>
+                <h4 className='ml-2 text-[1.2rem]'>Python</h4>
               </div>
             </div>
           </div>

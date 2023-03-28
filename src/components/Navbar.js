@@ -11,10 +11,14 @@ const Nav = () => {
   return (
     <div className='container shadow-md w-screen top-0 left-0 '>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-        <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800'>
+        <a
+          href='https://wcewlug.org/'
+          target={'_blank'}
+          className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800'
+        >
           <img src={logo} alt='' className='w-20 mr-5' />
           <span>Walchand Linux Users' Group</span>
-        </div>
+        </a>
 
         <div
           onClick={() => setOpen(!open)}

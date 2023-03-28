@@ -1,5 +1,4 @@
 import './App.css'
-import Parallax from './components/Parallax'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
@@ -11,16 +10,16 @@ import Registration from './components/Registration'
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       {/* <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Parallax />} />
         </Routes>
       </BrowserRouter> */}
-      <Title/>
-      <AboutEvent/>
-      <Strips/>
-      <Registration/>
+      <Title />
+      <AboutEvent />
+      <Strips />
+      <Registration />
     </>
   )
 }
