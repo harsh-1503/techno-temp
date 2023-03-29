@@ -12,17 +12,17 @@
 .backend_container {
   width: 35%;
   border-radius: 2rem;
-  box-shadow: 6px 6px 0px 1px rgb(233, 204, 19);
+  box-shadow: 6px 6px 0px 1px rgb(255, 206, 39);
   transition: all 0.2s;
-  border: 2px solid rgb(233, 204, 19);
-  background-color: rgb(95, 193, 217);
-  border: 2px solid rgb(233, 204, 19);
+  border: 2px solid rgb(255, 206, 39);
+  background-color: rgb(112, 197, 221);
+  border: 2px solid rgb(255, 206, 39);
   /* height: 20rem; */
 }
 
 .frontend_container:hover {
   background: transparent;
-  background-color: rgb(95, 193, 217);
+  background-color: rgb(112, 197, 221);
   transition: var(--transition);
 }
 .frontend_container:hover,
@@ -91,7 +91,7 @@ section {
 section > h1,
 section > h4 {
   text-align: center;
-  color: rgb(233, 204, 19);
+  color: rgb(255, 206, 39);
   margin: 1.5em;
   margin-top: 0em;
 }

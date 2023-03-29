@@ -5,7 +5,7 @@
 .Technologies {
   text-align: center;
   margin: 10px;
-  color: rgb(233, 204, 19);
+  color: rgb(255, 206, 39);
 }
 #strips {
   overflow-x: hidden;
@@ -35,11 +35,11 @@
 
 .strip1,
 .strip3 {
-  background: linear-gradient(to bottom, rgb(95, 193, 217), white);
+  background: linear-gradient(to bottom, rgb(112, 197, 221), white);
 }
 
 .strip2 {
-  background: linear-gradient(to bottom, rgb(233, 204, 19), white);
+  background: linear-gradient(to bottom, rgb(255, 206, 39), white);
 }
 
 .strip1-text,

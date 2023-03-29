@@ -1,0 +1,10 @@
+.image_conatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5rem;
+}
+
+.image_conatiner img {
+  height: 20rem;
+}

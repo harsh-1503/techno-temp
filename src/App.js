@@ -1,25 +1,23 @@
 import './App.css'
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
 import AboutEvent from './components/AboutEvent'
 import Strips from './components/Strips'
+import Images from './components/Images'
 import Registration from './components/Registration'
+import ContactUs from './components/ContactUs'
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <BrowserRouter>
-        <Routes>
-          <Route exact path='/' element={<Parallax />} />
-        </Routes>
-      </BrowserRouter> */}
       <Title />
       <AboutEvent />
       <Strips />
+      <Images />
       <Registration />
+      <ContactUs />
     </>
   )
 }
