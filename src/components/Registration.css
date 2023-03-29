@@ -17,6 +17,23 @@ input {
   justify-content: space-between;
 }
 
+.input_container input,
+.input_container select {
+  color: black;
+}
+
+.input_container input:hover,
+.input_container select:hover {
+  background-color: rgb(147, 218, 237);
+}
+.input_container input:focus,
+.input_container select:focus {
+  background-color: rgb(147, 218, 237);
+  outline: none;
+  color: black;
+  box-shadow: none;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .whole {
     width: 80%;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../images/WLUG.png'
+import { hover } from '@testing-library/user-event/dist/hover'
 
 const Nav = () => {
   let Links = [
@@ -15,6 +16,7 @@ const Nav = () => {
           href='https://wcewlug.org/'
           target={'_blank'}
           className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800'
+          style={{ textDecoration: 'none' }}
         >
           <img src={logo} alt='' className='w-20 mr-5' />
           <span>Walchand Linux Users' Group</span>

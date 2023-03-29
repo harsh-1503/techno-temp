@@ -5,7 +5,6 @@ import img2 from '../images/qr2.jpeg'
 import img3 from '../images/form1-removebg-preview.png'
 import wlug_logo from '../images/WLUG.png'
 
-
 function Registration() {
   const [img, setimg] = useState(img1)
 
@@ -30,33 +29,39 @@ function Registration() {
         </div>
 
         <div className='flex'>
-          <form className='w-1/2 m-10' method='POST' action='http://localhost:5000/getData'>
-            <div className='form-group border-none flex my-4'>
+          <form
+            className='w-1/2 m-10'
+            method='POST'
+            action='http://localhost:5000/getData'
+          >
+            <div className='form-group border-none flex my-4 input_container'>
               <label for='exampleInputPassword1' className='basis-1/5 text-xl'>
-                Name:  
+                Name:
               </label>
               <input
                 type='text'
                 name='name'
                 className='form-control ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='exampleInputPassword1'
+                autoComplete='off'
                 required
               />
             </div>
-            <div className='form-group border-none flex my-4'>
+            <div className='form-group border-none flex my-4 input_container'>
               <label for='exampleInputEmail1' className='basis-1/5 text-xl'>
                 Email ID:
               </label>
-              <input      
-                type='email'   
-                name='email'  
+              <input
+                type='email'
+                name='email'
                 className='form-control  ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='exampleInputEmail1'
+                autoComplete='off'
                 required
-              />  
+              />
             </div>
 
-            <div className='form-group border-none flex flex-row my-4'>
+            <div className='form-group border-none flex flex-row my-4 input_container'>
               <label for='collegeName' className='basis-1/5 text-xl'>
                 Phone No:
               </label>
@@ -66,11 +71,12 @@ function Registration() {
                 className='form-control  ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='collegeName'
                 aria-describedby='emailHelp'
+                autoComplete='off'
                 required
               />
             </div>
 
-            <div className='form-group border-none flex my-4'>
+            <div className='form-group border-none flex my-4 input_container'>
               <label for='collegeName' className='basis-1/5 text-xl'>
                 College Name:
               </label>
@@ -80,10 +86,11 @@ function Registration() {
                 className='form-control  ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='collegeName'
                 aria-describedby='emailHelp'
+                autoComplete='off'
                 required
               />
             </div>
-            <div className='input-group mb-3 my-4'>
+            <div className='input-group mb-3 my-4 input_container'>
               <label className='basis-1/5 text-xl' for='iyearOfStudy'>
                 Year of Study:
               </label>
@@ -94,13 +101,13 @@ function Registration() {
                 required
               >
                 <option selected>First Year</option>
-                <option >Second Year</option>
-                <option >Third Year</option>
-                <option >Fourth Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
               </select>
             </div>
 
-            <div className='input-group mb-3 my-4'>
+            <div className='input-group mb-3 my-4 input_container'>
               <label className='basis-1/5 text-xl' for='inputGroupSelect01'>
                 Select Course:
               </label>
@@ -111,14 +118,12 @@ function Registration() {
                 onChange={handleQR}
                 required
               >
-                <option >Frontend</option>
+                <option>Frontend</option>
                 <option>Backend</option>
-                <option selected>
-                  Both
-                </option>
+                <option selected>Both</option>
               </select>
             </div>
-            <div className='form-group border-none flex my-4'>
+            <div className='form-group border-none flex my-4 input_container'>
               <label for='paymentID' className='basis-1/5 text-xl '>
                 Transaction ID:
               </label>

@@ -40,6 +40,7 @@ function ContactUs() {
           </a>
         </div>
       </div>
+      <div className='end'></div>
     </>
   )
 }
