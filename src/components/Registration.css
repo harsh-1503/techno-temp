@@ -2,9 +2,14 @@ input {
   background-color: rgb(14, 14, 25);
 }
 .btn {
-  background-color: rgb(150, 150, 194);
-  margin: 1em 0em 1em 0em;
-  width: 100px;
+  background-color: rgb(233, 204, 19);
+  text-align: center;
+  width: 25%;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  width: 100%;
 }
 
 .upperDiv {
