@@ -9,7 +9,7 @@ const Nav = () => {
   ]
   let [open, setOpen] = useState(false)
   return (
-    <div className='container shadow-md w-screen top-0 left-0 '>
+    <div className='container shadow-md w-100 top-0 left-0 '>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
         <a
           href='https://wcewlug.org/'

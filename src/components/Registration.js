@@ -5,10 +5,8 @@ import img2 from '../images/qr2.jpeg'
 import img3 from '../images/form1-removebg-preview.png'
 import wlug_logo from '../images/WLUG.png'
 
-// import Axios from "axios"
 
 function Registration() {
-  // const [form, setform] = useState({})
   const [img, setimg] = useState(img1)
 
   const handleQR = () => {
@@ -20,21 +18,6 @@ function Registration() {
     }
   }
 
-  // const handleSubmit = async (e)=>{
-  //     e.preventDefault();
-  //     const response = await fetch('http://localhost:5001/getData',{
-  //         method: 'POST',
-  //         // body:JSON.stringify(),
-  //         headers:{
-  //             'Content-Type': 'application/json'
-  //         }
-  //     })
-  //     console.log(response);
-
-  //     const data = await response.text();
-  //     console.log(data);
-
-  // }
   return (
     <>
       <div className='w-full mt-5 p-5 w-lg-50'>
@@ -47,10 +30,10 @@ function Registration() {
         </div>
 
         <div className='flex'>
-          <form className='w-1/2 m-10'>
+          <form className='w-1/2 m-10' method='POST' action='http://localhost:5000/getData'>
             <div className='form-group border-none flex my-4'>
               <label for='exampleInputPassword1' className='basis-1/5 text-xl'>
-                Name:
+                Name:  
               </label>
               <input
                 type='text'
@@ -64,13 +47,13 @@ function Registration() {
               <label for='exampleInputEmail1' className='basis-1/5 text-xl'>
                 Email ID:
               </label>
-              <input
-                type='email'
-                name='email'
+              <input      
+                type='email'   
+                name='email'  
                 className='form-control  ml-3 h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='exampleInputEmail1'
                 required
-              />
+              />  
             </div>
 
             <div className='form-group border-none flex flex-row my-4'>
@@ -111,9 +94,9 @@ function Registration() {
                 required
               >
                 <option selected>First Year</option>
-                <option value='1'>Second Year</option>
-                <option value='2'>Third Year</option>
-                <option value='3'>Fourth Year</option>
+                <option >Second Year</option>
+                <option >Third Year</option>
+                <option >Fourth Year</option>
               </select>
             </div>
 
@@ -128,9 +111,9 @@ function Registration() {
                 onChange={handleQR}
                 required
               >
-                <option value='1'>Frontend</option>
-                <option value='2'>Backend</option>
-                <option value='3' selected>
+                <option >Frontend</option>
+                <option>Backend</option>
+                <option selected>
                   Both
                 </option>
               </select>
