@@ -20,28 +20,41 @@
   0% {
     transform: translateY(50px);
   }
+  
 }
 
 .two {
-  transform: translateY(-50px);
+  transform: translateY(50px);
   animation: movingtwo 1s alternate infinite;
   transition: transform 0.9s;
 }
 
 @keyframes movingtwo {
   0% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
 }
 
 .three {
-  transform: translateY(50px);
+  transform: translateY(-50px);
   animation: movingthree 1s alternate infinite;
   transition: transform 0.7s;
 }
 
 @keyframes movingthree {
   0% {
-    transform: translateY(-50px);
+    transform: translateY(50px);
+  }
+}
+
+@media (max-width:700px){
+  .image_conatiner{
+    flex-direction: column;
+    justify-content: center;
+    gap: 4em;
+  }
+  .image_conatiner img {
+    width: 80%;
+    margin: auto;
   }
 }

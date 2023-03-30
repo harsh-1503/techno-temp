@@ -6,10 +6,11 @@ import img1 from '../images/techno1-removebg-preview.png'
 import img2 from '../images/techno12.png'
 import './Title.css'
 
+
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
   const threshold = 300 // adjust this to control where the element stops
-  const factor = 4
+  const factor = 3
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,11 +37,11 @@ function Title() {
         </div>
 
         <div
-          className='title mx-20 font-semibold'
+          className='title mx-2 font-semibold'
           style={{ transform: `translateY(-${translateY * factor}px)` }}
         >
-          Walchand Linux Users' Group
-          <br />
+          <p className='club_name1'>Walchand Linux Users' Group</p>
+          
           <p className='presents'>Presents</p>
           <div
             className='techno_heading'
