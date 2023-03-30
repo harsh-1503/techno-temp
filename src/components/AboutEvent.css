@@ -1,13 +1,19 @@
+.experienced_container:hover .frontend_container {
+  transform: translateX(90px);
+}
+.experienced_container:hover .backend_container {
+  transform: translateX(-90px);
+}
+
 .experienced_container {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   gap: 3rem;
 }
-
 .frontend_container,
 .backend_container {
   width: 35%;
@@ -20,11 +26,20 @@
   /* height: 20rem; */
 }
 
+.frontend_container {
+  transition: transform 0.6s;
+}
+
+.backend_container {
+  transition: transform 0.6s;
+}
+
 .frontend_container:hover {
   background: transparent;
   background-color: rgb(112, 197, 221);
   transition: var(--transition);
 }
+
 .frontend_container:hover,
 .backend_container:hover {
   transition: var(--transition) 0.2s;

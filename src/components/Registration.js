@@ -35,7 +35,10 @@ function Registration() {
             action='http://localhost:5000/getData'
           >
             <div className='form-group border-none flex my-4 input_container'>
-              <label for='exampleInputPassword1' className='basis-1/5 text-xl'>
+              <label
+                for='exampleInputPassword1'
+                className='basis-1/5 text-xl font-semibold'
+              >
                 Name:
               </label>
               <input
@@ -177,7 +180,12 @@ function Registration() {
             </h5>
 
             <img src={img} className='rounded mx-auto w-1/4 mb-12' alt='...' />
-            <img src={img3} alt='' className='mx-auto' />
+            <div className='end_image'>
+              <h1>
+                Let's <br /> Develop!
+              </h1>
+              <img src={img3} alt='' className='mx-auto' />
+            </div>
           </div>
         </div>
       </div>

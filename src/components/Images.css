@@ -1,10 +1,47 @@
 .image_conatiner {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   column-gap: 5rem;
+  width: 100%;
 }
 
 .image_conatiner img {
   height: 20rem;
+}
+
+.one {
+  transform: translateY(-50px);
+  animation: movingone 1s alternate infinite;
+  transition: transform 0.7s;
+}
+
+@keyframes movingone {
+  0% {
+    transform: translateY(50px);
+  }
+}
+
+.two {
+  transform: translateY(-50px);
+  animation: movingtwo 1s alternate infinite;
+  transition: transform 0.9s;
+}
+
+@keyframes movingtwo {
+  0% {
+    transform: translateY(50px);
+  }
+}
+
+.three {
+  transform: translateY(50px);
+  animation: movingthree 1s alternate infinite;
+  transition: transform 0.7s;
+}
+
+@keyframes movingthree {
+  0% {
+    transform: translateY(-50px);
+  }
 }

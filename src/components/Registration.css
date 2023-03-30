@@ -34,6 +34,32 @@ input {
   box-shadow: none;
 }
 
+.end_image {
+  display: flex;
+  justify-content: center;
+}
+
+.end_image:hover h1 {
+  position: static;
+  margin-left: 5rem;
+  visibility: visible;
+}
+.end_image:hover img {
+  position: static;
+}
+
+.end_image h1,
+.end_image img {
+  transition: all 0.5s;
+  position: absolute;
+}
+
+.end_image h1 {
+  margin-top: 5rem;
+  font-weight: 900;
+  visibility: hidden;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .whole {
     width: 80%;
