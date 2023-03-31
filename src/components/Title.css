@@ -1,14 +1,16 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .title_container {
   display: flex;
-  height: 90vh;
+  /* height: 90vh; */
   justify-content: center;
   align-items: center;
   /* border: 2px solid black; */
   margin: 10px;
 }
+
 .title {
   position: relative;
   font-size: 30px;
@@ -25,13 +27,60 @@
 
 .presents {
   font-size: 20px;
+  /* 1.5 */
 }
-
+.club_name1{
+  font-size: 1vw;
+}
 .techno_heading {
   font-size: 5.1rem;
   color: rgb(255, 206, 39);
+  /* 7vw */
 }
 
 .extra {
   height: 100vh;
+}
+@media(min-width:0px) and (max-width:700px){
+  .title_container{
+    flex-direction: column;
+  }
+
+  .img1,
+.img2 {
+  /* display: block; */
+  width: 200px;
+  height: 200px;
+  margin-top: 0;
+  /* position: relative; */
+}
+
+  .club_name1 {
+    font-size: 5vw;
+  }
+  
+  .presents {
+    font-size: 3vw;
+  }
+  
+  .techno_heading {
+    font-size: 14vw;
+    color: rgb(255, 206, 39);
+  }
+  
+}
+
+@media(min-width:699px){
+  .club_name1 {
+    font-size:3vw;
+  }
+  
+  .presents {
+    font-size: 2vw;
+  }
+  
+  .techno_heading {
+    font-size: 8vw;
+    color: rgb(255, 206, 39);
+  }
 }

@@ -11,7 +11,7 @@ const Nav = () => {
   let [open, setOpen] = useState(false)
   return (
     <div className='shadow-md w-100 top-0 left-0 '>
-      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+      <div className='container md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
         <a
           href='https://wcewlug.org/'
           target={'_blank'}
@@ -19,7 +19,7 @@ const Nav = () => {
           style={{ textDecoration: 'none' }}
         >
           <img src={logo} alt='' className='w-20 mr-5' />
-          <span>Walchand Linux Users' Group</span>
+          <span className='club_name'>Walchand Linux Users' Group</span>
         </a>
 
         <div

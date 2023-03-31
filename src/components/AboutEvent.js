@@ -6,7 +6,7 @@ function AboutEvent() {
   return (
     <section id='experience'>
       <h1 className='font-semibold'>About The Event</h1>
-      <h4 className='mx-20 mb-10 font-medium text-[1.2rem]'>
+      <h4 className=' mb-10 font-medium text-[1.2rem]'>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
