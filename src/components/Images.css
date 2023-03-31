@@ -25,7 +25,7 @@
 .two {
   transform: translateY(-50px);
   animation: movingtwo 1s alternate infinite;
-  transition: transform 0.9s;
+  transition: transform 0.1s;
 }
 
 @keyframes movingtwo {
