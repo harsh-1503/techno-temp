@@ -8,7 +8,7 @@
   color: rgb(255, 206, 39);
 }
 
-.techContainer{
+.techContainer {
   height: 150px;
   width: 200px;
   display: flex;
@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.techContainer img{
+.techContainer img {
   width: 100%;
   height: 100%;
 }
@@ -51,10 +51,14 @@
 
 .strip1,
 .strip3 {
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
   background: linear-gradient(to bottom, rgb(112, 197, 221), white);
 }
 
 .strip2 {
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
   background: linear-gradient(to bottom, rgb(255, 206, 39), white);
 }
 
