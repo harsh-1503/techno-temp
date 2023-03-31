@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/techno-temp/static/css/main.db526038.css",
+    "main.js": "/techno-temp/static/js/main.c6afa35a.js",
+    "static/js/787.87e44ce1.chunk.js": "/techno-temp/static/js/787.87e44ce1.chunk.js",
+    "static/media/techno1-removebg-preview.png": "/techno-temp/static/media/techno1-removebg-preview.477f308ce142afffb3c5.png",
+    "static/media/techno12.png": "/techno-temp/static/media/techno12.71e51c6c9e709f1e4708.png",
+    "static/media/techno8-removebg-preview.png": "/techno-temp/static/media/techno8-removebg-preview.0011715c9a84048b3f09.png",
+    "static/media/techno7-removebg-preview.png": "/techno-temp/static/media/techno7-removebg-preview.71089d6f5d9e5e2e7362.png",
+    "static/media/techno6-removebg-preview.png": "/techno-temp/static/media/techno6-removebg-preview.4bc7aaba02d7c08c638f.png",
+    "static/media/form1-removebg-preview.png": "/techno-temp/static/media/form1-removebg-preview.d213bef37e46464c68e8.png",
+    "static/media/WLUG.png": "/techno-temp/static/media/WLUG.54d557449eb91ab9d2a9.png",
+    "index.html": "/techno-temp/index.html",
+    "main.db526038.css.map": "/techno-temp/static/css/main.db526038.css.map",
+    "main.c6afa35a.js.map": "/techno-temp/static/js/main.c6afa35a.js.map",
+    "787.87e44ce1.chunk.js.map": "/techno-temp/static/js/787.87e44ce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db526038.css",
+    "static/js/main.c6afa35a.js"
+  ]
+}
