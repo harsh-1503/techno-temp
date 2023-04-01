@@ -19,7 +19,7 @@ function Registration() {
 
   return (
     <>
-      <div className='w-full mt-5 p-1 w-lg-50'>
+      <div className='w-full mt-36 p-1 w-lg-50' id='register'>
         <div className='upperDiv'>
           {/* <h2 style={{ visibility: 'hidden' }}>Nothing</h2> */}
           <h2 className='text-center text-warning h1 font-semibold'>
@@ -37,7 +37,7 @@ function Registration() {
             <div className='input-flex form-group border-none flex my-4 input_container'>
               <label
                 for='exampleInputPassword1'
-                className='basis-1/5 text-xl font-semibold'
+                className='basis-1/5 text-xl'
               >
                 Name:
               </label>
@@ -181,9 +181,9 @@ function Registration() {
 
             <img src={img} className='rounded mx-auto w-1/4 mb-12' alt='...' />
             <div className='end_image'>
-              <h1>
+              {/* <h1>
                 Let's <br /> Develop!
-              </h1>
+              </h1> */}
               <img src={img3} alt='' className='mx-auto' />
             </div>
           </div>

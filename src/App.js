@@ -7,17 +7,19 @@ import Strips from './components/Strips'
 import Images from './components/Images'
 import Registration from './components/Registration'
 import ContactUs from './components/ContactUs'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Title />
       <AboutEvent />
       <Strips />
       <Images />
       <Registration />
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <Footer/>
     </>
   )
 }
