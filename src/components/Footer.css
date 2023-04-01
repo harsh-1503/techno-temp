@@ -1,66 +1,180 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 206, 39);
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  justify-content: space-around;
+  margin: 5em 0.5em;
+  padding: 4rem 0;
+  border-radius: 1em;
+}
 
+.logo-icon-container {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
 
-.smedia-links{
-    display: flex;
-    flex-direction: column;
+.smedia-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.wlug-logo img {
+  width: 16rem;
+  height: auto;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stay_tuned {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navli {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+}
+
+.navli a,
+.policies div a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.ics {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.policies,
+.policies div {
+  display: flex;
+}
+
+@media only screen and (max-width: 1700px) {
+  .logo-icon-container {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .logo-icon-container {
     width: 50%;
-    
+  }
 }
-.stay_tuned{
-    text-align: center;
-    font-family: Montserrat,sans-serif;
-    font-weight: 800;
-    margin-bottom: 0.7em;
-}
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
 
+@media only screen and (max-width: 1270px) {
+  .logo-icon-container {
+    width: 55%;
+  }
+  .footer {
+    column-gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
-.navli{
-    display: flex;
-    flex-direction: row;
-    gap: 4em;
-    align-items: center;
+
+@media only screen and (max-width: 1236px) {
+  .logo-icon-container {
+    width: 100%;
     justify-content: center;
-    
-    font-family: Montserrat,sans-serif;
-    font-weight: 600;
+    column-gap: 4rem;
+  }
 }
-.ics{
-    display: flex;
-    flex-direction: row;
+
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
     gap: 1em;
-    justify-content: center;
+  }
+  .navli {
+    font-size: 1.2rem;
+  }
+  .wlug-logo {
+    width: 14rem;
+  }
+  .stay_tuned {
+    font-size: 1.4rem;
+  }
+  .copryright p {
+    font-size: 0.9rem;
+  }
 }
-.footer{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(255, 206, 39);
-    align-items: center;
-    justify-content: center;
-    margin: 5em .5em;
-    height: 10em;
-    border-radius: 1em;
+@media only screen and (max-width: 680px) {
+  .footer {
+    justify-content: space-between;
+    padding: 4rem 3rem;
+  }
+  .logo-icon-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .wlug-logo {
+    display: none;
+  }
+  .navigation {
+    align-items: flex-end;
+    width: 100%;
+  }
+  .navli {
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    gap: 1.5em;
+  }
+  .policies {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 }
 
-@media(min-width:425px) and (max-width:768px){
-    .footer{
-        flex-direction: column;
-        gap: 1em;
-    }
-    .navli{
-        font-size: 2.5vw;
-    }
+@media only screen and (max-width: 400px) {
+  .footer {
+    padding: 4rem 2rem;
+  }
+  .navli {
+    font-size: 1.05rem;
+    justify-content: center;
+  }
+  .navigation {
+    align-items: center;
+  }
+  .stay_tuned {
+    font-size: 1.3rem;
+  }
+  .policies {
+    font-size: 0.95rem;
+  }
 }
-@media(max-width:425px){
-    .footer{
-        flex-direction: column;
-        gap: 1em;
-    }
-    .navli{
-        font-size: 3vw;
-    }
+@media only screen and (max-width: 320px) {
+  .navli {
+    gap: 1em;
+  }
 }

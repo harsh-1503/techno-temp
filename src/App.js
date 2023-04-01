@@ -12,14 +12,14 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Title />
       <AboutEvent />
       <Strips />
       <Images />
       <Registration />
       {/* <ContactUs /> */}
-      <Footer/>
+      <Footer />
     </>
   )
 }
