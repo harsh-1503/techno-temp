@@ -1,3 +1,7 @@
+#experience{
+  z-index: 1;
+}
+
 .experienced_container {
   width: 100%;
   display: flex;
