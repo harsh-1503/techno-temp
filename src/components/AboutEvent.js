@@ -52,7 +52,7 @@ function AboutEvent() {
           </div>
         </div>
         <div
-          className='backend_container pt-4 pb-8'
+          className='backend_container pt-4 pb-12 shadow-xl'
           onMouseOver={() => setHoveredB(true)}
           onMouseOut={() => setHoveredB(false)}
         >
@@ -83,3 +83,4 @@ function AboutEvent() {
 }
 
 export default AboutEvent
+  
