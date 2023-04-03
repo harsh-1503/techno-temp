@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import img1 from '../images/techno1-removebg-preview.png'
 import img2 from '../images/techno12.png'
 import './Title.css'
-
+import wlug from '../images/WLUG.png'
 
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -28,6 +28,9 @@ function Title() {
 
   return (
     <>
+      <div className='logo-conatiner'>
+        <img src={wlug} alt='' />
+      </div>
       <div className='title_container h-screen'>
         <div
           className='img1'
@@ -41,7 +44,7 @@ function Title() {
           style={{ transform: `translateY(-${translateY * factor}px)` }}
         >
           <p className='club_name1'>Walchand Linux Users' Group</p>
-          
+
           <p className='presents'>Presents</p>
           <div
             className='techno_heading'
