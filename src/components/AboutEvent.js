@@ -31,7 +31,7 @@ function AboutEvent() {
           onMouseOut={() => setHoveredF(false)}
         >
           <div className='frontend_heading'>
-            <h3 className='font-semibold mb-4'>Frontend Development</h3>
+            <h3 className='font-semibold mb-4 sm:mb-1'>Frontend Development</h3>
           </div>
           <div className='stack'>
             <div className='circle-container'>
@@ -83,4 +83,3 @@ function AboutEvent() {
 }
 
 export default AboutEvent
-  
