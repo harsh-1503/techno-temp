@@ -3,39 +3,39 @@ import './Registration.css'
 import img1 from '../images/qr1.jpeg'
 import img2 from '../images/qr2.jpeg'
 import img3 from '../images/form1-removebg-preview.png'
+import hurray from '../images/hurray.png'
+import oops from '../images/oops.png'
 import wlug_logo from '../images/WLUG.png'
-import * as API from '../API/registrationAPI';
+import * as API from '../API/registrationAPI'
 
 function Registration() {
   const [img, setimg] = useState(img1)
-  const [yes,setYes] = useState("no")
-  const [formData,setFormData] = useState({
-    "name": "",
-    "email": "",
-    "phoneno": "",
-    "transactionId": "",
-    "collegeName": "",
-    "yearOfStudy": "",
-    "course": "",
-    "isDualBooted": "",
-    "answer":yes
+  const [yes, setYes] = useState('no')
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phoneno: '',
+    transactionId: '',
+    collegeName: '',
+    yearOfStudy: '',
+    course: '',
+    isDualBooted: '',
+    answer: yes,
   })
 
-
   const handleChange = (event) => {
-    event.preventDefault();
-    const { name, value } = event.target;
-    setFormData(prevFormData => ({
+    event.preventDefault()
+    const { name, value } = event.target
+    setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value
-    }));
-    console.log(formData);
-  };
+      [name]: value,
+    }))
+    console.log(formData)
+  }
 
-  const handleSubmit  = (e) => {
+  const handleSubmit = (e) => {
     // e.preventDefault();
-    API.getData(formData);
-    
+    API.getData(formData)
   }
 
   const handleQR = (e) => {
@@ -46,7 +46,7 @@ function Registration() {
     } else {
       setimg(img2)
     }
-    handleChange(e);
+    handleChange(e)
   }
 
   return (
@@ -61,14 +61,9 @@ function Registration() {
         </div>
 
         <div className='lowerdiv'>
-          <form
-            className='form' onSubmit={handleSubmit} 
-          >
+          <form className='form' onSubmit={handleSubmit}>
             <div className='input-flex form-group border-none flex my-4 input_container'>
-              <label
-                for='exampleInputPassword1'
-                className='basis-1/5 text-xl'
-              >
+              <label for='exampleInputPassword1' className='basis-1/5 text-xl'>
                 Name:
               </label>
               <input
@@ -136,7 +131,7 @@ function Registration() {
                 Year of Study:
               </label>
               <select
-                className="Select h-11 basis-4/5 rounded-lg bg-[#5fc1d9] "
+                className='Select h-11 basis-4/5 rounded-lg bg-[#5fc1d9] '
                 id='yearOfStudy'
                 name='yearOfStudy'
                 value={formData.yearOfStudy}
@@ -192,7 +187,7 @@ function Registration() {
                   id='yes'
                   name='answer'
                   value={yes}
-                  onChange={(e)=> setYes("yes")}
+                  onChange={(e) => setYes('yes')}
                   className='mr-2'
                 />
                 Yes
