@@ -10,7 +10,7 @@ function AboutEvent() {
     <section id='experience'>
       <h1 className='font-semibold'>About The Event</h1>
       <h4
-        className=' mb-10 font-medium text-[1.2rem]'
+        className=' mb-10 mx-10 font-medium '
         style={{ color: 'rgb(64, 64, 64)' }}
       >
         Lorem Ipsum is simply dummy text of the printing and typesetting

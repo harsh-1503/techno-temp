@@ -6,8 +6,9 @@
   width: 100%;
 }
 
-.image_conatiner img {
+.image_conatiner div img {
   height: 20rem;
+  width: auto;
 }
 
 .one {
@@ -16,23 +17,10 @@
   transition: transform 0.7s;
 }
 
-@keyframes movingone {
-  0% {
-    transform: translateY(50px);
-  }
-  
-}
-
 .two {
   transform: translateY(50px);
   animation: movingtwo 1s alternate infinite;
   transition: transform 0.1s;
-}
-
-@keyframes movingtwo {
-  0% {
-    transform: translateY(-50px);
-  }
 }
 
 .three {
@@ -41,20 +29,63 @@
   transition: transform 0.7s;
 }
 
+@keyframes movingone {
+  0% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes movingtwo {
+  0% {
+    transform: translateY(-50px);
+  }
+}
+
 @keyframes movingthree {
   0% {
     transform: translateY(50px);
   }
 }
 
-@media (max-width:700px){
-  .image_conatiner{
+@media only screen and (max-width: 1200px) {
+  .image_conatiner div img {
+    height: 15rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .image_conatiner {
+    column-gap: 2rem;
+  }
+  .image_conatiner div img {
+    height: 13rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .image_conatiner {
     flex-direction: column;
     justify-content: center;
     gap: 4em;
   }
-  .image_conatiner img {
-    width: 80%;
+  .image_conatiner div img {
+    width: 60%;
+    height: auto;
     margin: auto;
+  }
+  .one,
+  .two {
+    transform: translateY(-35px) translateX(15px);
+  }
+  .two {
+    transform: translateY(-35px) translateX(-15px);
+  }
+  .one,
+  .two,
+  .three {
+    animation: phoneMoving 1.2s alternate infinite;
+  }
+  @keyframes phoneMoving {
+    0% {
+      transform: translateY(35px);
+    }
   }
 }

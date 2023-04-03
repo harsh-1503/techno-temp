@@ -16,10 +16,8 @@
 
 .title_container {
   display: flex;
-  /* height: 90vh; */
   justify-content: center;
   align-items: center;
-  /* border: 2px solid black; */
   margin: 10px;
 }
 
@@ -30,11 +28,9 @@
 }
 .img1,
 .img2 {
-  /* display: block; */
   width: 400px;
   height: 400px;
   margin-top: 150px;
-  /* position: relative; */
 }
 
 .presents {
@@ -47,7 +43,6 @@
 .techno_heading {
   font-size: 5.1rem;
   color: rgb(255, 206, 39);
-  /* 7vw */
 }
 
 .extra {
@@ -69,11 +64,9 @@
 
   .img1,
   .img2 {
-    /* display: block; */
     width: 200px;
     height: 200px;
     margin-top: 0;
-    /* position: relative; */
   }
 
   .club_name1 {
