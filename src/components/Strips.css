@@ -7,7 +7,7 @@
   margin: 10px;
   color: rgb(255, 206, 39);
 }
-.html11{
+.html11 {
   height: 50px;
   width: 1em;
 }
@@ -24,16 +24,10 @@
 .techContainer img {
   width: 100px;
   height: 80px;
+  margin-right: 1.4rem;
 }
 
 #strips {
-  overflow-x: hidden;
-}
-
-.strip1-1,
-.strip1-2,
-.strip-3 {
-  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -102,5 +96,28 @@
   }
   100% {
     transform: translateX(-800px);
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .strip1,
+  .strip2,
+  .strip3 {
+    height: 70px;
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .strip1,
+  .strip2,
+  .strip3 {
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .techContainer img {
+    width: auto;
+    height: 45px;
+    margin-right: 1rem;
   }
 }
