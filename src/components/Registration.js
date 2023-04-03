@@ -4,22 +4,54 @@ import img1 from '../images/qr1.jpeg'
 import img2 from '../images/qr2.jpeg'
 import img3 from '../images/form1-removebg-preview.png'
 import wlug_logo from '../images/WLUG.png'
+import * as API from '../API/registrationAPI';
 
 function Registration() {
   const [img, setimg] = useState(img1)
+  const [yes,setYes] = useState("no")
+  const [formData,setFormData] = useState({
+    "name": "",
+    "email": "",
+    "phoneno": "",
+    "transactionId": "",
+    "collegeName": "",
+    "yearOfStudy": "",
+    "course": "",
+    "isDualBooted": "",
+    "answer":yes
+  })
 
-  const handleQR = () => {
+
+  const handleChange = (event) => {
+    event.preventDefault();
+    const { name, value } = event.target;
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      [name]: value
+    }));
+    console.log(formData);
+  };
+
+  const handleSubmit  = (e) => {
+    // e.preventDefault();
+    API.getData(formData);
+    
+  }
+
+  const handleQR = (e) => {
+    // e.preventDefault();
     const course = document.getElementById('inputGroupSelect01')
     if (course.value === '3') {
       setimg(img1)
     } else {
       setimg(img2)
     }
+    handleChange(e);
   }
 
   return (
     <>
-      <div className='w-full mt-36 p-1 w-lg-50' id='register'>
+      <div className='whole_form w-full mt-36 p-1 w-lg-50' id='register'>
         <div className='upperDiv'>
           {/* <h2 style={{ visibility: 'hidden' }}>Nothing</h2> */}
           <h2 className='text-center text-warning h1 font-semibold'>
@@ -30,9 +62,7 @@ function Registration() {
 
         <div className='lowerdiv'>
           <form
-            className='form w-1/2'
-            method='POST'
-            action='http://localhost:5000/getData'
+            className='form' onSubmit={handleSubmit} 
           >
             <div className='input-flex form-group border-none flex my-4 input_container'>
               <label
@@ -44,6 +74,8 @@ function Registration() {
               <input
                 type='text'
                 name='name'
+                value={formData.name}
+                onChange={handleChange}
                 className='form-control  h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='exampleInputPassword1'
                 autoComplete='off'
@@ -57,6 +89,8 @@ function Registration() {
               <input
                 type='email'
                 name='email'
+                value={formData.email}
+                onChange={handleChange}
                 className='form-control   h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='exampleInputEmail1'
                 autoComplete='off'
@@ -71,6 +105,8 @@ function Registration() {
               <input
                 type='number'
                 name='phoneno'
+                value={formData.phoneno}
+                onChange={handleChange}
                 className='form-control   h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='collegeName'
                 aria-describedby='emailHelp'
@@ -88,6 +124,8 @@ function Registration() {
                 name='collegeName'
                 className='form-control  h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='collegeName'
+                value={formData.collegeName}
+                onChange={handleChange}
                 aria-describedby='emailHelp'
                 autoComplete='off'
                 required
@@ -101,6 +139,8 @@ function Registration() {
                 className="Select h-11 basis-4/5 rounded-lg bg-[#5fc1d9] "
                 id='yearOfStudy'
                 name='yearOfStudy'
+                value={formData.yearOfStudy}
+                onChange={handleChange}
                 required
               >
                 <option selected>First Year</option>
@@ -118,6 +158,7 @@ function Registration() {
                 className='Select h-11 basis-4/5 rounded-lg bg-[#5fc1d9] '
                 id='inputGroupSelect01'
                 name='course'
+                value={formData.course}
                 onChange={handleQR}
                 required
               >
@@ -133,6 +174,8 @@ function Registration() {
               <input
                 type='text'
                 name='transactionId'
+                value={formData.transactionId}
+                onChange={handleChange}
                 className='form-control  h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='paymentID'
                 aria-describedby='emailHelp'
@@ -148,7 +191,8 @@ function Registration() {
                   type='radio'
                   id='yes'
                   name='answer'
-                  value='yes'
+                  value={yes}
+                  onChange={(e)=> setYes("yes")}
                   className='mr-2'
                 />
                 Yes

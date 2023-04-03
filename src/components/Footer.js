@@ -88,7 +88,7 @@ function Footer() {
                 </a>
               </div>
               <div className='copryright'>
-                <p>&#169; 2022 WCEWLUG, ALL RIGHTS RESERVED</p>
+                <p>&#169; 2023 WCEWLUG, ALL RIGHTS RESERVED</p>
               </div>
             </div>
           </div>

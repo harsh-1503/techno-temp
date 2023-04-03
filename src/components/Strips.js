@@ -10,60 +10,60 @@ function Strips() {
         <div className='strips'>
           <div className='strip1'>
             <div className='strip1-text'>
-              <div class="techContainer
-              " id='html'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png' />
+              <div class="techContainer 
+              " ><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png' alt='...' />
                 HTML</div>
               <div class="techContainer
-              " id='rest_api'> <img src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png' />
+              " id='rest_api'> <img src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png' alt='...' />
                 REST API</div>
               <div class="techContainer
               " id='api_integration'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png' alt='...'/>
 
                 API Integration</div>
               <div class="techContainer
-              " id='expressJS'><img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png?20170429090805' />ExpressJS</div>
+              " id='expressJS'><img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png?20170429090805' alt='...'/>ExpressJS</div>
               <div class="techContainer
-              " id='html1'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png' />
+              " id='html1'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png' alt='...'/>
                 HTML</div>
               <div class="techContainer
-              " id='rest_api'> <img src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png' />
+              " id='rest_api'> <img src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png' alt='...'/>
                 REST API</div>
               <div class="techContainer
               " id='api_integration'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png' alt='...'/>
                 API Integration</div>
               <div class="techContainer
-              " id='expressJS'><img src='https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg' />ExpressJS</div>
+              " id='expressJS'><img src='https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg' alt='...'/>ExpressJS</div>
               <div class="techContainer
-              " id='html1'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png' />
+              " id='html1'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png' alt='...'/>
                 HTML</div>
               <div class="techContainer
-              " id='rest_api'> <img src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png' />
+              " id='rest_api'> <img src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png'alt='...' />
                 REST API</div>
               <div class="techContainer
               " id='api_integration'>
                 <div id='api_integration'>
-                  <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png' />
+                  <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png' alt='...'/>
 
                   API Integration</div>API Integration</div>
               <div class="techContainer
-              " id='expressJS'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/image_lotjfz.png' />ExpressJS</div>
+              " id='expressJS'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/image_lotjfz.png' alt='...'/>ExpressJS</div>
               <div class="techContainer
               " id='html'>HTML</div>
               <div class="techContainer
               " id='rest_api'>REST API</div>
               <div class="techContainer
               " id='api_integration'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197866/pngegg_1_s3ibhj.png'alt='...' />
 
                 API Integration</div>
               <div class="techContainer
               " id='expressJS'>
 
-                <img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png?20170429090805' />ExpressJS</div>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png?20170429090805' alt='...'/>ExpressJS</div>
               <div class="techContainer
-              " id='html1'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png' />
+              " id='html1'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/html_qwpdmx.png'alt='...' />
                 HTML</div>
               <div class="techContainer
               " id='rest_api'>REST API</div>
@@ -75,47 +75,47 @@ function Strips() {
           <div className='strip2'>
             <div className='strip2-text'>
               <div class="techContainer
-              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' />JavaScript</div>
+              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' alt='...'/>JavaScript</div>
               <div class="techContainer
               " id='mongoDB'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196013/mongo_jxqwjd.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196013/mongo_jxqwjd.png' alt='...'/>
 
 
                 MongoDB</div>
               <div class="techContainer
               " id='ReactJS'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/react_ugqwlx.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/react_ugqwlx.png' alt='...'/>
 
 
                 ReactJS</div>
               <div class="techContainer
-              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' />JavaScript</div>
+              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' alt='...'/>JavaScript</div>
 
               <div class="techContainer
               " id='mongoDB'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196013/mongo_jxqwjd.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196013/mongo_jxqwjd.png' alt='...'/>
                 MongoDB</div>
-              <div id='ReactJS'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/react_ugqwlx.png' />
+              <div class="techContainer" id='ReactJS'>
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/react_ugqwlx.png' alt='...'/>
                 ReactJS</div>
               <div class="techContainer
-              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' />JavaScript</div>
+              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' alt='...'/>JavaScript</div>
 
               <div class="techContainer
               " id='mongoDB'>MongoDB</div>
               <div class="techContainer
               " id='ReactJS'>ReactJS</div>
               <div class="techContainer
-              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' />JavaScript</div>
+              " id='javascript'><img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/javascript_eu7acc.png' alt='...'/>JavaScript</div>
 
               <div class="techContainer
               " id='mongoDB'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196013/mongo_jxqwjd.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196013/mongo_jxqwjd.png' alt='...'/>
 
                 MongoDB</div>
               <div class="techContainer
               " id='ReactJS'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/react_ugqwlx.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/react_ugqwlx.png' alt='...'/>
                 ReactJS</div>
             </div>
           </div>
@@ -123,61 +123,49 @@ function Strips() {
             <div className='strip3-text'>
               <di class="techContainer
               " id='nodejs'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/node_gkoa1z.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/node_gkoa1z.png' alt='...'/>
 
 
                 NodeJS</di>
-              <div class="techContainer
-              " id='graphQL'>
-
-                <img src='https://img.icons8.com/color/344/graphql.png' />
-
-                GraphQL</div>
+              
               <div class="techContainer
               " id='CSS'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/css_iwcr7t.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/css_iwcr7t.png' alt='...'/>
                 CSS</div>
               <div class="techContainer
               " id='axios'>
 
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197304/Group_1_zsdtp1.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197304/Group_1_zsdtp1.png' alt='...'/>
                 Axios</div>
               <div class="techContainer
               " id='nodejs'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/node_gkoa1z.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/node_gkoa1z.png' alt='...'/>
 
 
                 NodeJS</div>
-              <div class="techContainer
-              " id='graphQL'>
-                <img src='https://img.icons8.com/color/344/graphql.png' />
-                GraphQL</div>
+              
               <div class="techContainer
               " id='CSS'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/css_iwcr7t.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/css_iwcr7t.png' alt='...'/>
                 CSS</div>
               <div class="techContainer
               " id='axios'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197304/Group_1_zsdtp1.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197304/Group_1_zsdtp1.png' alt='...'/>
 
                 Axios</div>
               <div class="techContainer
               " id='nodejs'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/node_gkoa1z.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196014/node_gkoa1z.png' alt='...'/>
 
                 NodeJS</div>
-              <div class="techContainer
-              " id='graphQL'>
-
-                <img src='https://img.icons8.com/color/344/graphql.png' />
-                GraphQL</div>
+              
               <div class="techContainer
               " id='CSS'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/css_iwcr7t.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680196012/css_iwcr7t.png' alt='...'/>
                 CSS</div>
               <div class="techContainer
               " id='axios'>
-                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197304/Group_1_zsdtp1.png' />
+                <img src='https://res.cloudinary.com/dg1gtkp3z/image/upload/v1680197304/Group_1_zsdtp1.png' alt='...'/>
                 Axios</div>
             </div>
           </div>

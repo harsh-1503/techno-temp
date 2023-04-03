@@ -26,16 +26,16 @@ function ContactUs() {
           <a
             href='https://www.linkedin.com/company/wlug-club/mycompany/'
             target={'_blank'}
-          >
+          rel='noreferrer'>
             <img src={linkedin} alt='' className=' mx-3 contact_img' />
           </a>
-          <a href='https://www.instagram.com/wcewlug/' target={'_blank'}>
+          <a href='https://www.instagram.com/wcewlug/' target={'_blank'}rel='noreferrer'>
             <img src={instagram} alt='' className='mx-3 contact_img' />
           </a>
-          <a href='https://discord.gg/4ZhVjdTS' target={'_blank'}>
+          <a href='https://discord.gg/4ZhVjdTS' target={'_blank'}rel='noreferrer'>
             <img src={discord} alt='' className='mx-3 contact_img' />
           </a>
-          <a href='https://twitter.com/wcewlug' target={'_blank'}>
+          <a href='https://twitter.com/wcewlug' target={'_blank'}rel='noreferrer'>
             <img src={twitter} alt='' className='mx-3 contact_img' />
           </a>
         </div>
