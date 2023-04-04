@@ -9,8 +9,9 @@ import wlug from '../images/WLUG.png'
 
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
-  const threshold = 300 // adjust this to control where the element stops
-  const factor = 3
+  const threshold = 720 // adjust this to control where the element stops
+  const [flag, setFlag] = useState(true)
+  const factor = 1
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +25,9 @@ function Title() {
     }
   }, [])
 
-  const translateY = scrollPosition > threshold ? scrollPosition - threshold : 0
+  console.log(scrollPosition)
+  const translateY = scrollPosition > threshold ? 0 : scrollPosition
+  // setFlag(false)
 
   return (
     <>
