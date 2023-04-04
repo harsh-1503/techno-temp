@@ -14,6 +14,7 @@
 
 .strips{
   /* background-image: url('../images/bg1_2_1550x1050.png'); */
+  backdrop-filter: blur(15px);
 }
 .techContainer {
   height: 150px;

@@ -65,10 +65,10 @@ function Registration() {
   return (
     <>
       <div className="whole_form w-full mt-36 p-1 w-lg-50" id="register">
-        {/* <div className="upperLower"> */}
+        <div className="upperLower">
           <div className="upperDiv">
             {/* <h2 style={{ visibility: 'hidden' }}>Nothing</h2> */}
-            <h2 className="text-center text-warning h1 font-semibold">
+            <h2 className="text-center text-warning h1 font-semibold m-4">
               Registration Form
             </h2>
             {/* <img src={wlug_logo} alt='' style={{ height: '3.5rem' }} /> */}
@@ -252,7 +252,7 @@ function Registration() {
             </div>
           </div>
         </div>
-      {/* </div> */}
+      </div>
     </>
   );
 }
