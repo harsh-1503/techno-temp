@@ -39,12 +39,21 @@ function Registration() {
 
   const handleQR = (e) => {
     // e.preventDefault();
-    const course = document.getElementById('inputGroupSelect01')
-    if (course.value === '3') {
+    const courseSelector = document.getElementById('inputGroupSelect01')
+    if (
+      courseSelector.value === 'Backend' ||
+      courseSelector.value === 'Frontend'
+    ) {
       setimg(img1)
-    } else {
+    } else if (courseSelector.value === 'Both') {
       setimg(img2)
     }
+    // if (course.value === '3') {
+    //   setimg(img1)
+    // } else {
+    //   console.log(course.value)
+    //   setimg(img2)
+    // }
     handleChange(e)
   }
 
