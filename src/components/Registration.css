@@ -22,15 +22,28 @@ input {
   display: flex;
   /* justify-content: space-between; */
   justify-content: center;
+  
+  
 }
+
+.upperLower{
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(15px);
+  margin: 4em;
+  border-radius: 1.5em;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.lowerdiv {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  
+}
+
 
 .input_container input,
 .input_container select {
   color: black;
-}
-
-.lowerdiv {
-  display: flex;
 }
 
 .input_container input:hover,
@@ -77,6 +90,7 @@ input {
 /* @media(min-width: 426px) { */
 .lowerdiv {
   flex-direction: column;
+  
 }
 
 .input-flex {
@@ -105,13 +119,7 @@ input {
 .register_btn {
   background-color: rgb(255, 206, 39);
 }
-.whole_form {
-  background: rgba(255, 255, 255, 0.4);
-  width: 90%;
-  border-radius: 4px;
-  /* margin: 3em; */
-  margin: 5em auto;
-}
+
 /* } */
 
 @media (min-width: 500px) and (max-width: 840px) {

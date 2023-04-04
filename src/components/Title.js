@@ -22,7 +22,7 @@ function Title() {
     }
   }, [])
 
-  console.log(scrollPosition)
+  // console.log(scrollPosition)
   const translateY = scrollPosition > threshold ? 0 : scrollPosition
 
   return (

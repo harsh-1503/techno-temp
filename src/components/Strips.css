@@ -11,6 +11,10 @@
   height: 50px;
   width: 1em;
 }
+
+.strips{
+  /* background-image: url('../images/bg1_2_1550x1050.png'); */
+}
 .techContainer {
   height: 150px;
   width: 200px;
@@ -45,19 +49,21 @@
   font-size: 30px;
   align-items: center;
   font-weight: bold;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
 }
 
 .strip1,
 .strip3 {
-  backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px);
-  background: linear-gradient(to bottom, rgb(112, 197, 221), white);
+  /* backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px); */
+  /* background: linear-gradient(to bottom, rgb(112, 197, 221), #dcdddf); */
 }
 
 .strip2 {
-  backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px);
-  background: linear-gradient(to bottom, rgb(255, 206, 39), white);
+  /* backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px); */
+  /* background: linear-gradient(to bottom, rgb(255, 206, 39), #dcdddf); */
 }
 
 .strip1-text,
