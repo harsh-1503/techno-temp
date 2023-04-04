@@ -5,7 +5,6 @@ import img2 from '../images/qr2.jpeg'
 import img3 from '../images/form1-removebg-preview.png'
 import hurray from '../images/hurray.png'
 import oops from '../images/oops.png'
-import wlug_logo from '../images/WLUG.png'
 import * as API from '../API/registrationAPI'
 
 function Registration() {
@@ -34,7 +33,7 @@ function Registration() {
   }
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    // e.preventDefault()
     API.getData(formData)
   }
 
@@ -62,7 +61,7 @@ function Registration() {
 
         <div className='lowerdiv'>
           <form className='form' onSubmit={handleSubmit}>
-            <div className='input-flex form-group border-none flex my-4 input_container'>
+            <div className='input-flex form-group border-none flex my-4 sm:my-1 input_container'>
               <label for='exampleInputPassword1' className='basis-1/5 text-xl'>
                 Name:
               </label>
@@ -77,7 +76,7 @@ function Registration() {
                 required
               />
             </div>
-            <div className='input-flex form-group border-none flex my-4 input_container'>
+            <div className='input-flex form-group border-none flex my-4 sm:my-1 input_container'>
               <label for='exampleInputEmail1' className='basis-1/5 text-xl'>
                 Email ID:
               </label>
@@ -110,14 +109,14 @@ function Registration() {
               />
             </div>
 
-            <div className='input-flex form-group border-none flex my-4 input_container'>
+            <div className='input-flex form-group border-none flex my-4 sm:my-1 input_container'>
               <label for='collegeName' className='basis-1/5 text-xl'>
                 College Name:
               </label>
               <input
                 type='text'
                 name='collegeName'
-                className='form-control  h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
+                className='form-control h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='collegeName'
                 value={formData.collegeName}
                 onChange={handleChange}
@@ -126,12 +125,12 @@ function Registration() {
                 required
               />
             </div>
-            <div className='input-flex input-group mb-3 my-4 input_container'>
+            <div className='input-flex input-group mb-3 my-4 sm:my-1 input_container'>
               <label className='basis-1/5 text-xl' for='yearOfStudy'>
                 Year of Study:
               </label>
               <select
-                className='Select h-11 basis-4/5 rounded-lg bg-[#5fc1d9] '
+                className='Select basis-4/5 p-2 lg:p-0 rounded-lg bg-[#5fc1d9] '
                 id='yearOfStudy'
                 name='yearOfStudy'
                 value={formData.yearOfStudy}
@@ -145,12 +144,12 @@ function Registration() {
               </select>
             </div>
 
-            <div className='input-flex input-group mb-3 my-4 input_container'>
+            <div className='input-flex input-group mb-3 my-4 sm:my-1 input_container'>
               <label className='basis-1/5 text-xl' for='inputGroupSelect01'>
                 Select Course:
               </label>
               <select
-                className='Select h-11 basis-4/5 rounded-lg bg-[#5fc1d9] '
+                className='Select basis-4/5 p-2 lg:p-0 rounded-lg bg-[#5fc1d9] '
                 id='inputGroupSelect01'
                 name='course'
                 value={formData.course}
@@ -162,7 +161,7 @@ function Registration() {
                 <option selected>Both</option>
               </select>
             </div>
-            <div className='input-flex form-group border-none flex my-4 input_container'>
+            <div className='input-flex form-group border-none flex input_container transaction '>
               <label for='paymentID' className='basis-1/5 text-xl '>
                 Transaction ID:
               </label>
@@ -174,6 +173,7 @@ function Registration() {
                 className='form-control  h-11 basis-4/5 rounded-lg bg-[#5fc1d9]'
                 id='paymentID'
                 aria-describedby='emailHelp'
+                autoComplete='off'
                 required
               />
             </div>

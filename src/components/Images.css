@@ -73,10 +73,10 @@
   }
   .one,
   .two {
-    transform: translateY(-35px) translateX(15px);
+    transform: translateY(-35px) translateX(10px);
   }
   .two {
-    transform: translateY(-35px) translateX(-15px);
+    transform: translateY(-35px) translateX(-10px);
   }
   .one,
   .two,

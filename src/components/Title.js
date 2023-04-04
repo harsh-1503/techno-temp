@@ -1,6 +1,4 @@
 import React from 'react'
-// import { ParallaxLayer } from "@react-spring/web";
-// import { Parallax } from 'react-parallax'
 import { useState, useEffect } from 'react'
 import img1 from '../images/techno1-removebg-preview.png'
 import img2 from '../images/techno12.png'
@@ -9,8 +7,7 @@ import wlug from '../images/WLUG.png'
 
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
-  const threshold = 720 // adjust this to control where the element stops
-  const [flag, setFlag] = useState(true)
+  const threshold = 720
   const factor = 1
 
   useEffect(() => {
@@ -27,7 +24,6 @@ function Title() {
 
   console.log(scrollPosition)
   const translateY = scrollPosition > threshold ? 0 : scrollPosition
-  // setFlag(false)
 
   return (
     <>
