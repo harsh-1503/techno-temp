@@ -1,21 +1,18 @@
 import React from 'react'
 import './Images.css'
-import img1 from '../images/techno8-removebg-preview.png'
-import img2 from '../images/techno6-removebg-preview.png'
-import img3 from '../images/techno7-removebg-preview.png'
 
-const Images = () => {
+const Images = (props) => {
   return (
     <>
       <div className='image_conatiner'>
         <div className='box one'>
-          <img src={img1} alt='' />
+          <img src={props.img1} alt={props.alt1} />
         </div>
         <div className='box two'>
-          <img src={img2} alt='' />
+          <img src={props.img2} alt={props.alt2} />
         </div>
         <div className='box three'>
-          <img src={img3} alt='' />
+          <img src={props.img3} alt={props.alt3} />
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ import Images from './components/Images'
 import Registration from './components/Registration'
 import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
+import ImagesMain from './components/ImagesMain'
 
 function App() {
   return (
@@ -15,8 +16,7 @@ function App() {
       {/* <Navbar /> */}
       <Title />
       <AboutEvent />
-      <Strips />
-      <Images />
+      <ImagesMain />  
       <Registration />
       {/* <ContactUs /> */}
       <Footer />

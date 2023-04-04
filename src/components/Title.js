@@ -36,7 +36,7 @@ function Title() {
           className='img1'
           style={{ transform: `translateY(${translateY * factor}px)` }}
         >
-          <img src={img1} alt='bg1' />
+          <img src={img1} alt='3D cloud Data Center by Impro Studio' />
         </div>
 
         <div
@@ -57,7 +57,7 @@ function Title() {
           className='img2'
           style={{ transform: `translateY(${translateY * factor}px)` }}
         >
-          <img src={img2} alt='bg2' />
+          <img src={img2} alt='' />
         </div>
       </div>
     </>
