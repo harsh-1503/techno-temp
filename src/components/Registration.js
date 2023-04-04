@@ -18,8 +18,8 @@ function Registration() {
     phoneno: "",
     transactionId: "",
     collegeName: "",
-    yearOfStudy: "",
-    course: "",
+    yearOfStudy: "First year",
+    course: "Frontend",
     isDualBooted: "",
     answer: yes,
   });
@@ -155,10 +155,10 @@ function Registration() {
                   onChange={handleChange}
                   required
                 >
-                  <option selected>First Year</option>
-                  <option>Second Year</option>
-                  <option>Third Year</option>
-                  <option>Fourth Year</option>
+                  <option selected value="First Year">First Year</option>
+                  <option value="Second Year">Second Year</option>
+                  <option value="Third Year">Third Year</option>
+                  <option value="Fourth Year">Fourth Year</option>
                 </select>
               </div>
 
@@ -174,9 +174,10 @@ function Registration() {
                   onChange={handleQR}
                   required
                 >
-                  <option>Frontend</option>
-                  <option>Backend</option>
                   <option selected>Both</option>
+                  <option >Frontend</option>
+                  <option >Backend</option>
+                  
                 </select>
               </div>
               <div className="input-flex form-group border-none flex input_container transaction ">
