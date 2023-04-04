@@ -1,7 +1,7 @@
 import axios from "axios";
-const API = axios.create({baseURL:"http://localhost:5000"})
+const API = axios.create({baseURL:"https://technobackend-production.up.railway.app/"})
 
-// https://technobackend-production.up.railway.app/
+
 export const getData = async(formData) => {
     try{
         // console.log(formData);
