@@ -111,7 +111,7 @@ input {
   margin: auto;
 }
 .img_qr {
-  /* width: 100%; */
+  width: 100%;
   margin: 3em;
   margin-top: 0;
 }
@@ -136,6 +136,9 @@ input {
     width: 70%;
     margin: auto;
   }
+  .form{
+    width: 100%;
+  }
 }
 
 @media (min-width: 840px) {
@@ -143,9 +146,10 @@ input {
     flex-direction: row;
   }
 
-  .form {
+  .form { 
     margin: 3em;
     margin-top: 0em;
+    width: 100%;
   }
 
   .input-flex {
@@ -161,5 +165,8 @@ input {
 @media only screen and (max-width: 560px) {
   .upperDiv h2 {
     font-size: 1.6rem;
+  }
+  .form{
+    width: 90%;
   }
 }
