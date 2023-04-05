@@ -9,10 +9,7 @@ function AboutEvent() {
   return (
     <section id='experience'>
       <h1 className='font-semibold'>About The Event</h1>
-      <h4
-        className=' mb-10 mx-10 font-medium '
-        style={{ color: 'rgb(64, 64, 64)' }}
-      >
+      <p className=' mb-10 mx-10' style={{ color: 'rgb(64, 64, 64)' }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -22,7 +19,7 @@ function AboutEvent() {
         of Letraset sheets containing Lorem Ipsum passages, and more recently
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
-      </h4>
+      </p>
 
       <div className='experienced_container '>
         <div
