@@ -12,8 +12,7 @@
   width: 1em;
 }
 
-.strips{
-  /* background-image: url('../images/bg1_2_1550x1050.png'); */
+.strips {
   backdrop-filter: blur(15px);
 }
 .techContainer {
@@ -56,15 +55,15 @@
 
 .strip1,
 .strip3 {
-  /* backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px); */
-  /* background: linear-gradient(to bottom, rgb(112, 197, 221), #dcdddf); */
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  background: linear-gradient(to bottom, rgb(112, 197, 221), #eeeeee);
 }
 
 .strip2 {
-  /* backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px); */
-  /* background: linear-gradient(to bottom, rgb(255, 206, 39), #dcdddf); */
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  background: linear-gradient(to bottom, rgb(255, 206, 39), #eeeeee);
 }
 
 .strip1-text,
