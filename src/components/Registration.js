@@ -229,7 +229,7 @@ function Registration() {
               <div className='register-imgs'>
                 <img
                   src={img}
-                  className='QR rounded mx-auto w-1/4 mb-12'
+                  className='QR rounded mx-auto w-1/4 sm:w-1/2 mb-12'
                   alt='...'
                 />
                 <div className='end_image'>
