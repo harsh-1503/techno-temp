@@ -4,14 +4,15 @@ import img1 from '../images/qr1.jpeg'
 import img2 from '../images/qr2.jpeg'
 import img3 from '../images/form1-removebg-preview.png'
 import hurrayImg from '../images/hurray.png'
-import oops from '../images/oops.png'
+// import oops from '../images/oops.png'
+// import swal from 'sweetalert'
 import * as API from '../API/registrationAPI'
 
 function Registration() {
   const [img, setimg] = useState(img1)
   const [yes, setYes] = useState('no')
-  const [hurray, sethurray] = useState(false)
-  const [oops, setoops] = useState(false)
+  // const [hurray, sethurray] = useState(false)
+  // const [oops, setoops] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -37,9 +38,7 @@ function Registration() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const data = API.getData(formData)
-    if (data) {
-      sethurray(true)
-    }
+    // sethurray(true)
   }
 
   const handleQR = (e) => {
@@ -233,8 +232,8 @@ function Registration() {
                   alt='...'
                 />
                 <div className='end_image'>
-                  {hurray && <img src={hurrayImg} alt='' className='mx-auto' />}
-                  {!hurray && <img src={img3} alt='' className='mx-auto' />}
+                  {/* {hurray && <img src={hurrayImg} alt='' className='mx-auto' />} */}
+                  <img src={img3} alt='' className='mx-auto' />
                 </div>
               </div>
             </div>
