@@ -3,13 +3,12 @@ input {
 }
 
 .register_btn {
-  background-color: rgb(255, 206, 39);
+  background-color: rgb(255, 206, 39) !important;
   text-align: center;
   margin: auto;
   height: 2.5em;
   width: 100%;
   border-radius: 1em;
-
   transition: all 0.4s;
 }
 
@@ -96,6 +95,9 @@ input {
 .input-flex {
   flex-direction: row;
 }
+.input-flex label {
+  font-size: 1.25rem;
+}
 .form {
   width: 50%;
   margin: auto;
@@ -127,7 +129,7 @@ input {
   }
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1600px) {
   .lowerdiv {
     flex-direction: column-reverse;
   }
@@ -136,8 +138,8 @@ input {
     justify-content: space-around;
   }
   .w-1\/4 {
-    width: 10rem;
-    height: 10rem;
+    width: 150px;
+    height: 150px;
   }
   .mb-12 {
     margin-bottom: 0rem;
@@ -190,6 +192,15 @@ input {
 
 @media only screen and (max-width: 560px) {
   .upperDiv h2 {
+    font-size: 1.45rem;
+  }
+  .img_qr h5 {
+    font-size: 1.05rem;
+  }
+  .input-flex label {
+    font-size: 1rem;
+  }
+  .upperDiv h2 {
     font-size: 1.6rem;
   }
 }
@@ -220,8 +231,5 @@ input {
   }
   label {
     margin-bottom: 0.3rem;
-  }
-  .text-xl {
-    font-size: 1.05rem;
   }
 }

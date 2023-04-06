@@ -69,10 +69,7 @@ function Registration() {
           <div className='lowerdiv'>
             <form className='form' onSubmit={handleSubmit}>
               <div className='input-flex form-group border-none flex my-4 sm:my-1 input_container'>
-                <label
-                  for='exampleInputPassword1'
-                  className='basis-1/3 text-xl'
-                >
+                <label for='exampleInputPassword1' className='basis-1/3'>
                   Name:
                 </label>
                 <input
@@ -80,14 +77,14 @@ function Registration() {
                   name='name'
                   value={formData.name}
                   onChange={handleChange}
-                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#5fc1d9] md:h-24 md:p-18 '
+                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#5fc1d9] '
                   id='exampleInputPassword1'
                   autoComplete='off'
                   required
                 />
               </div>
               <div className='input-flex form-group border-none flex my-4 sm:my-1 input_container'>
-                <label for='exampleInputEmail1' className='basis-1/3 text-xl'>
+                <label for='exampleInputEmail1' className='basis-1/3'>
                   Email ID:
                 </label>
                 <input
@@ -103,7 +100,7 @@ function Registration() {
               </div>
 
               <div className='input-flex form-group border-none flex  my-4 input_container'>
-                <label for='collegeName' className='basis-1/3 text-xl'>
+                <label for='collegeName' className='basis-1/3'>
                   Phone No:
                 </label>
                 <input
@@ -120,7 +117,7 @@ function Registration() {
               </div>
 
               <div className='input-flex form-group border-none flex my-4 sm:my-1 input_container'>
-                <label for='collegeName' className='basis-1/3 text-xl'>
+                <label for='collegeName' className='basis-1/3'>
                   College Name:
                 </label>
                 <input
@@ -136,7 +133,7 @@ function Registration() {
                 />
               </div>
               <div className='input-flex input-group mb-3 my-4 sm:my-1  input_container'>
-                <label className='basis-1/3 text-xl' for='yearOfStudy'>
+                <label className='basis-1/3' for='yearOfStudy'>
                   Year of Study:
                 </label>
                 <select
@@ -157,7 +154,7 @@ function Registration() {
               </div>
 
               <div className='input-flex input-group mb-3 my-4 sm:my-1 input_container'>
-                <label className='basis-1/3 text-xl' for='inputGroupSelect01'>
+                <label className='basis-1/3' for='inputGroupSelect01'>
                   Select Course:
                 </label>
                 <select
@@ -174,7 +171,7 @@ function Registration() {
                 </select>
               </div>
               <div className='input-flex form-group border-none flex input_container transaction '>
-                <label for='paymentID' className='basis-1/3 text-xl '>
+                <label for='paymentID' className='basis-1/3 '>
                   Transaction ID:
                 </label>
                 <input
@@ -226,13 +223,13 @@ function Registration() {
               </div>
             </form>
             <div className='img_qr'>
-              <h5 className='text-center font-weight-bold my-4 mx-4 text-xl'>
+              <h5 className='text-center font-weight-bold my-4 mx-4'>
                 Scan this QR code to make the payment
               </h5>
               <div className='register-imgs'>
                 <img
                   src={img}
-                  className='rounded mx-auto w-1/4 mb-12'
+                  className='QR rounded mx-auto w-1/4 mb-12'
                   alt='...'
                 />
                 <div className='end_image'>
