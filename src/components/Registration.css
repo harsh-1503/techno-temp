@@ -140,7 +140,7 @@ input {
     justify-content: space-around;
   }
   .w-1\/4 {
-    width: 150px;
+    width: 200px;
   }
   .mb-12 {
     margin-bottom: 0rem;
@@ -173,6 +173,7 @@ input {
   }
   .register-imgs {
     flex-direction: column;
+    justify-content: center;
   }
   .end_image {
     width: 80%;
