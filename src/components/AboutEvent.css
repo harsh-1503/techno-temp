@@ -2,9 +2,6 @@
   z-index: 1;
   margin-bottom: 100px;
 }
-.experience h4 {
-  font-size: 50px;
-}
 .experienced_container {
   width: 100%;
   display: flex;
@@ -104,9 +101,6 @@
 .about p {
   text-align: left;
   font-size: 1.1rem;
-}
-h1 {
-  font-size: 3rem;
 }
 @media only screen and (max-width: 1650px) {
   .about p {
@@ -218,9 +212,6 @@ h1 {
   }
   .about p {
     font-size: 0.9rem;
-  }
-  h1 {
-    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 380px) {

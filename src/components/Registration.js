@@ -169,7 +169,7 @@ function Registration() {
                   <option>Backend</option>
                 </select>
               </div>
-              <div className='input-flex form-group border-none flex input_container transaction '>
+              <div className='input-flex form-group border-none flex input_container transaction mb-14'>
                 <label for='paymentID' className='basis-1/3 '>
                   Transaction ID:
                 </label>
@@ -185,33 +185,7 @@ function Registration() {
                   required
                 />
               </div>
-              <div className='input-flex mb-10 mt-3'>
-                <label for='dualBootedLaptop' className='text-xl mr-5'>
-                  Do you have dual booted laptop?
-                </label>
-                <label for='yes' className='text-xl mr-5'>
-                  <input
-                    type='radio'
-                    id='yes'
-                    name='answer'
-                    value={yes}
-                    onChange={(e) => setYes('yes')}
-                    className='mr-2'
-                  />
-                  Yes
-                </label>
-                <label for='no' className='text-xl'>
-                  <input
-                    type='radio'
-                    id='no'
-                    name='answer'
-                    value='no'
-                    className='mr-2'
-                  />
-                  No
-                </label>
-              </div>
-              <div className='btn_class'>
+              <div className='btn_class '>
                 <button
                   type='submit'
                   name='submit'
@@ -232,7 +206,6 @@ function Registration() {
                   alt='...'
                 />
                 <div className='end_image'>
-                  {/* {hurray && <img src={hurrayImg} alt='' className='mx-auto' />} */}
                   <img src={img3} alt='' className='mx-auto' />
                 </div>
               </div>

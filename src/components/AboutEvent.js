@@ -8,17 +8,23 @@ function AboutEvent() {
   const [hoveredb, setHoveredB] = useState(false)
   return (
     <section id='experience'>
-      <h1 className='font-semibold'>About The Event</h1>
+      <h1 className='font-semibold' style={{ fontSize: '3rem' }}>
+        About The Event
+      </h1>
       <p className=' mb-10 mx-10' style={{ color: 'rgb(64, 64, 64)' }}>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        Technotweet is an event on web development conducted by Walchand Linux
+        Users' Group. Technotweet 2k23 is a two-day workshop focusing mainly on
+        MERN stack development. The topics will vary from basics of React, node
+        js, MongoDB, express, and a project which will be continued throughout
+        the whole workshop. All the sessions will consist of a hands-on segment
+        so, you'll get good practice in all the languages and codes. Also, the
+        engaging competitions at the end of both days will make you grind
+        through all the concepts learned. Technotweet 2k23 is designed to
+        welcome participants with a range of experience levels, let they be an
+        expert or a novice. We expect you to have a good grip on all the topics
+        which will be covered, at the end of both days. Show your enthusiasm and
+        excitement toward learning, and let's be open to exploring the world of
+        development!
       </p>
 
       <div className='experienced_container '>
