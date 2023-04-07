@@ -186,7 +186,8 @@ input {
     display: none;
   }
   .img_qr_two h5,
-  .img_qr_two .register-imgs .QR {
+  .img_qr_two .register-imgs .QR,
+  .img_qr_two h3 {
     display: none;
   }
   .form {

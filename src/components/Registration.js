@@ -73,6 +73,9 @@ function Registration() {
               <h5 className='text-center font-weight-bold my-4 mx-4'>
                 Scan this QR code to make the payment
               </h5>
+              <h3 className='text-center font-weight-bold my-4 mx-4'>
+                {domain}
+              </h3>
               <div className='register-imgs'>
                 <img
                   src={img}
