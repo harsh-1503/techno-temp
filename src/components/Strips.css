@@ -57,7 +57,7 @@
 .strip3 {
   backdrop-filter: blur(5.4px);
   -webkit-backdrop-filter: blur(5.4px);
-  background: linear-gradient(to bottom, rgb(112, 197, 221), #eeeeee);
+  background: linear-gradient(to bottom, rgb(83, 189, 231), #eeeeee);
 }
 
 .strip2 {
