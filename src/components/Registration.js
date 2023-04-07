@@ -10,6 +10,7 @@ import * as API from '../API/registrationAPI'
 
 function Registration() {
   const [img, setimg] = useState(img1)
+  const [domain, setDomain] = useState('Frontend')
   const [yes, setYes] = useState('no')
   // const [hurray, sethurray] = useState(false)
   // const [oops, setoops] = useState(false)
@@ -44,13 +45,15 @@ function Registration() {
   const handleQR = (e) => {
     // e.preventDefault();
     const courseSelector = document.getElementById('inputGroupSelect01')
-    if (
-      courseSelector.value === 'Backend' ||
-      courseSelector.value === 'Frontend'
-    ) {
+    if (courseSelector.value === 'Frontend') {
       setimg(img1)
+      setDomain('Frontend')
+    } else if (courseSelector.value === 'Backend') {
+      setimg(img1)
+      setDomain('Backend')
     } else if (courseSelector.value === 'Both') {
       setimg(img2)
+      setDomain('Both')
     }
     handleChange(e)
   }
@@ -214,6 +217,9 @@ function Registration() {
               <h5 className='text-center font-weight-bold my-4 mx-4'>
                 Scan this QR code to make the payment
               </h5>
+              <h3 className='text-center font-weight-bold my-4 mx-4'>
+                {domain}
+              </h3>
               <div className='register-imgs'>
                 <img
                   src={img}
