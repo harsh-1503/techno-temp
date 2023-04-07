@@ -27,7 +27,7 @@
   box-shadow: 6px 6px 0px 1px rgb(255, 206, 39);
   transition: all 0.2s;
   border: 2px solid rgb(255, 206, 39);
-  background-color: rgb(112, 197, 221);
+  background-color: rgb(83, 189, 231);
   border: 2px solid rgb(255, 206, 39);
 }
 
@@ -41,7 +41,7 @@
 
 .frontend_container:hover {
   background: transparent;
-  background-color: rgb(112, 197, 221);
+  background-color: rgb(83, 189, 231);
   transition: var(--transition);
 }
 
@@ -62,12 +62,12 @@
   color: rgb(255, 206, 39);
   font-weight: 900;
   font-size: 1.8rem;
-  text-shadow: 0px 0px 5px rgb(190, 190, 190);
+  /* text-shadow: 0px 0px 5px rgb(190, 190, 190); */
 }
 
 .backend_container:hover .backend_heading h3,
 .frontend_container:hover .frontend_heading h3 {
-  color: rgb(79, 171, 193);
+  color: rgb(83, 189, 231);
   font-weight: 900;
   font-size: 1.8rem;
   text-shadow: none;

@@ -91,7 +91,7 @@ function Registration() {
                   name='name'
                   value={formData.name}
                   onChange={handleChange}
-                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#5fc1d9] '
+                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#44c8fc] '
                   id='exampleInputPassword1'
                   autoComplete='off'
                   required
@@ -106,7 +106,7 @@ function Registration() {
                   name='email'
                   value={formData.email}
                   onChange={handleChange}
-                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='exampleInputEmail1'
                   autoComplete='off'
                   required
@@ -122,7 +122,7 @@ function Registration() {
                   name='phoneno'
                   value={formData.phoneno}
                   onChange={handleChange}
-                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='collegeName'
                   aria-describedby='emailHelp'
                   autoComplete='off'
@@ -137,7 +137,7 @@ function Registration() {
                 <input
                   type='text'
                   name='collegeName'
-                  className='form-control h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='collegeName'
                   value={formData.collegeName}
                   onChange={handleChange}
@@ -151,7 +151,7 @@ function Registration() {
                   Year of Study:
                 </label>
                 <select
-                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#5fc1d9] '
+                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#44c8fc] '
                   id='yearOfStudy'
                   name='yearOfStudy'
                   value={formData.yearOfStudy}
@@ -172,7 +172,7 @@ function Registration() {
                   Select Course:
                 </label>
                 <select
-                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#5fc1d9] '
+                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#44c8fc] '
                   id='inputGroupSelect01'
                   name='course'
                   value={formData.course}
@@ -193,7 +193,7 @@ function Registration() {
                   name='transactionId'
                   value={formData.transactionId}
                   onChange={handleChange}
-                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='paymentID'
                   aria-describedby='emailHelp'
                   autoComplete='off'
