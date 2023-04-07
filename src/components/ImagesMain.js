@@ -6,7 +6,7 @@ import img2 from '../images/techno6-removebg-preview.png'
 import img3 from '../images/techno7-removebg-preview.png'
 import img4 from '../images/techno9.png'
 import img5 from '../images/techno2-removebg-preview.png'
-import img6 from '../images/techno3-removebg-preview (1).png'
+import img6 from '../images/bglast.png'
 
 const ImagesMain = () => {
   return (

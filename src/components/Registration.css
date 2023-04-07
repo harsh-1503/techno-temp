@@ -64,12 +64,12 @@ input {
 
 .input_container input:hover,
 .input_container select:hover {
-  background-color: rgb(147, 218, 237);
+  background-color: rgb(83, 189, 231);
 }
 
 .input_container input:focus,
 .input_container select:focus {
-  background-color: rgb(147, 218, 237);
+  background-color: rgb(83, 189, 231);
   outline: none;
   color: black;
   box-shadow: none;
@@ -195,7 +195,8 @@ input {
     display: none;
   }
   .img_qr_two h5,
-  .img_qr_two .register-imgs .QR {
+  .img_qr_two .register-imgs .QR,
+  .img_qr_two h3 {
     display: none;
   }
   .form {
@@ -230,7 +231,7 @@ input {
 
 @media only screen and (max-width: 560px) {
   .img_qr_one {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 0.5rem;
   }
   .upperDiv h2 {

@@ -11,8 +11,9 @@ import "../fonts/font.css";
 import "./inputs.css";
 
 function Registration() {
-  const [img, setimg] = useState(img1);
-  const [yes, setYes] = useState("no");
+  const [img, setimg] = useState(img1)
+  const [domain, setDomain] = useState('Frontend')
+  const [yes, setYes] = useState('no')
   // const [hurray, sethurray] = useState(false)
   // const [oops, setoops] = useState(false)
   const [formData, setFormData] = useState({
@@ -45,14 +46,16 @@ function Registration() {
 
   const handleQR = (e) => {
     // e.preventDefault();
-    const courseSelector = document.getElementById("inputGroupSelect01");
-    if (
-      courseSelector.value === "Backend" ||
-      courseSelector.value === "Frontend"
-    ) {
-      setimg(img1);
-    } else if (courseSelector.value === "Both") {
-      setimg(img2);
+    const courseSelector = document.getElementById('inputGroupSelect01')
+    if (courseSelector.value === 'Frontend') {
+      setimg(img1)
+      setDomain('Frontend')
+    } else if (courseSelector.value === 'Backend') {
+      setimg(img1)
+      setDomain('Backend')
+    } else if (courseSelector.value === 'Both') {
+      setimg(img2)
+      setDomain('Both')
     }
     handleChange(e);
   };
@@ -72,7 +75,10 @@ function Registration() {
               <h5 className="text-center font-weight-bold my-4 mx-4">
                 Scan this QR code to make the payment
               </h5>
-              <div className="register-imgs">
+              <h3 className='text-center font-weight-bold my-4 mx-4'>
+                {domain}
+              </h3>
+              <div className='register-imgs'>
                 <img
                   src={img}
                   className="QR rounded mx-auto w-1/4 sm:w-1/2 mb-12"
@@ -93,7 +99,7 @@ function Registration() {
                   name='name'
                   value={formData.name}
                   onChange={handleChange}
-                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#5fc1d9] '
+                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#44c8fc] '
                   id='exampleInputPassword1'
                   autoComplete='off'
                   required
@@ -108,7 +114,7 @@ function Registration() {
                   name='email'
                   value={formData.email}
                   onChange={handleChange}
-                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='exampleInputEmail1'
                   autoComplete='off'
                   required
@@ -124,7 +130,7 @@ function Registration() {
                   name='phoneno'
                   value={formData.phoneno}
                   onChange={handleChange}
-                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control   h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='collegeName'
                   aria-describedby='emailHelp'
                   autoComplete='off'
@@ -139,7 +145,7 @@ function Registration() {
                 <input
                   type='text'
                   name='collegeName'
-                  className='form-control h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='collegeName'
                   value={formData.collegeName}
                   onChange={handleChange}
@@ -153,7 +159,7 @@ function Registration() {
                   Year of Study:
                 </label>
                 <select
-                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#5fc1d9] '
+                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#44c8fc] '
                   id='yearOfStudy'
                   name='yearOfStudy'
                   value={formData.yearOfStudy}
@@ -174,7 +180,7 @@ function Registration() {
                   Select Course:
                 </label>
                 <select
-                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#5fc1d9] '
+                  className='Select basis-2/3 p-2 lg:p-0 rounded-lg bg-[#44c8fc] '
                   id='inputGroupSelect01'
                   name='course'
                   value={formData.course}
@@ -195,7 +201,7 @@ function Registration() {
                   name='transactionId'
                   value={formData.transactionId}
                   onChange={handleChange}
-                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#5fc1d9]'
+                  className='form-control  h-11 basis-2/3 rounded-lg bg-[#44c8fc]'
                   id='paymentID'
                   aria-describedby='emailHelp'
                   autoComplete='off'
@@ -323,7 +329,10 @@ function Registration() {
               <h5 className="text-center font-weight-bold my-4 mx-4">
                 Scan this QR code to make the payment
               </h5>
-              <div className="register-imgs">
+              <h3 className='text-center font-weight-bold my-4 mx-4'>
+                {domain}
+              </h3>
+              <div className='register-imgs'>
                 <img
                   src={img}
                   className="QR rounded mx-auto w-1/4 sm:w-1/2 mb-12"
