@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 input {
-  caret-color: red;
+  caret-color: rgb(116, 116, 8);
 }
 
 /* body {
@@ -59,7 +59,7 @@ input::placeholder {
 input ,select{
   background: #ecf0f3;
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
   height: 50px;
   font-size: 14px;
   border-radius: 1em;

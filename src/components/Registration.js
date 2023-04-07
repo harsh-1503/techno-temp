@@ -7,13 +7,16 @@ import hurrayImg from "../images/hurray.png";
 // import oops from '../images/oops.png'
 // import swal from 'sweetalert'
 import * as API from "../API/registrationAPI";
+// import Spinner from "react-bootstrap/Spinner";
 import "../fonts/font.css";
 import "./inputs.css";
+// import { MDBSpinner } from "mdb-react-ui-kit";
+
 
 function Registration() {
-  const [img, setimg] = useState(img1)
-  const [domain, setDomain] = useState('Frontend')
-  const [yes, setYes] = useState('no')
+  const [img, setimg] = useState(img1);
+  const [domain, setDomain] = useState("Frontend");
+  const [loading, setloading] = useState(false);
   // const [hurray, sethurray] = useState(false)
   // const [oops, setoops] = useState(false)
   const [formData, setFormData] = useState({
@@ -25,7 +28,6 @@ function Registration() {
     yearOfStudy: "First year",
     course: "Frontend",
     isDualBooted: "",
-    answer: yes,
   });
 
   const handleChange = (event) => {
@@ -40,22 +42,24 @@ function Registration() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setloading(true)
     const data = API.getData(formData);
+    setloading(false)
     // sethurray(true)
   };
 
   const handleQR = (e) => {
     // e.preventDefault();
-    const courseSelector = document.getElementById('inputGroupSelect01')
-    if (courseSelector.value === 'Frontend') {
-      setimg(img1)
-      setDomain('Frontend')
-    } else if (courseSelector.value === 'Backend') {
-      setimg(img1)
-      setDomain('Backend')
-    } else if (courseSelector.value === 'Both') {
-      setimg(img2)
-      setDomain('Both')
+    const courseSelector = document.getElementById("inputGroupSelect01");
+    if (courseSelector.value === "Frontend") {
+      setimg(img1);
+      setDomain("Frontend");
+    } else if (courseSelector.value === "Backend") {
+      setimg(img1);
+      setDomain("Backend");
+    } else if (courseSelector.value === "Both") {
+      setimg(img2);
+      setDomain("Both");
     }
     handleChange(e);
   };
@@ -75,10 +79,10 @@ function Registration() {
               <h5 className="text-center font-weight-bold my-4 mx-4">
                 Scan this QR code to make the payment
               </h5>
-              <h3 className='text-center font-weight-bold my-4 mx-4'>
+              <h3 className="text-center font-weight-bold my-4 mx-4">
                 {domain}
               </h3>
-              <div className='register-imgs'>
+              <div className="register-imgs">
                 <img
                   src={img}
                   className="QR rounded mx-auto w-1/4 sm:w-1/2 mb-12"
@@ -254,9 +258,7 @@ function Registration() {
                   required
                   placeholder="9876543210"
                 />
-                <label for="collegeName">
-                  College Name
-                </label>
+                <label for="collegeName">College Name</label>
                 <input
                   type="text"
                   name="collegeName"
@@ -266,11 +268,9 @@ function Registration() {
                   aria-describedby="emailHelp"
                   autoComplete="off"
                   required
-                  placeholder="Walchand College of Engineering College Sangli"
+                  placeholder="Walchand College of Engineering, Sangli"
                 />
-                <label for="yearOfStudy">
-                  Year of Study
-                </label>
+                <label for="yearOfStudy">Year of Study</label>
                 <select
                   id="yearOfStudy"
                   name="yearOfStudy"
@@ -279,7 +279,6 @@ function Registration() {
                   required
                   placeholder="First Year"
                   className="Select"
-
                 >
                   <option selected value="First Year">
                     First Year
@@ -288,9 +287,7 @@ function Registration() {
                   <option value="Third Year">Third Year</option>
                   <option value="Fourth Year">Fourth Year</option>
                 </select>
-                <label for="inputGroupSelect01">
-                  Select Course:
-                </label>
+                <label for="inputGroupSelect01">Select Course:</label>
                 <select
                   id="inputGroupSelect01"
                   name="course"
@@ -303,36 +300,40 @@ function Registration() {
                   <option>Frontend</option>
                   <option>Backend</option>
                 </select>
-                <label for='paymentID' className='basis-1/3 '>
+                <label for="paymentID" className="basis-1/3 ">
                   Transaction ID
                 </label>
                 <input
-                  type='text'
-                  name='transactionId'
+                  type="text"
+                  name="transactionId"
                   value={formData.transactionId}
                   onChange={handleChange}
-                  id='paymentID'
-                  aria-describedby='emailHelp'
-                  autoComplete='off'
+                  id="paymentID"
+                  aria-describedby="emailHelp"
+                  autoComplete="off"
                   required
                 />
 
                 <button
                   type="submit"
-                  style={{ color: "black", backgroundColor: "yellow" }}
+                  style={{ color: "black", backgroundColor: "#ffc107",display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',gap:'1em' }}
                 >
-                  LOGIN
+                  <div>Register</div>
+                  {loading && <div className="loading-spinner"></div>}
                 </button>
+                
+                  
+              
               </div>
             </form>
             <div className="img_qr_two">
               <h5 className="text-center font-weight-bold my-4 mx-4">
                 Scan this QR code to make the payment
               </h5>
-              <h3 className='text-center font-weight-bold my-4 mx-4'>
+              <h3 className="text-center font-weight-bold my-4 mx-4">
                 {domain}
               </h3>
-              <div className='register-imgs'>
+              <div className="register-imgs">
                 <img
                   src={img}
                   className="QR rounded mx-auto w-1/4 sm:w-1/2 mb-12"
@@ -351,3 +352,4 @@ function Registration() {
 }
 
 export default Registration;
+

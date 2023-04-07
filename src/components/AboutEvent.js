@@ -8,7 +8,7 @@ function AboutEvent() {
   const [hoveredb, setHoveredB] = useState(false)
   return (
     <section id='experience'>
-      <h1 className='font-bold about-heading' style={{ fontSize: '2rem' }}>
+      <h1 className='font-bold about-heading' style={{ fontSize: '2rem',fontFamily:'Blackpast' }}>
         About The Event
       </h1>
       <p className=' mb-10 mx-10' style={{ color: 'rgb(64, 64, 64)' }}>
@@ -77,8 +77,7 @@ function AboutEvent() {
                 Technotweet 2k23, we'll teach you everything you need to know
                 about backend development, including Nodejs, Express, MongoDB,
                 and more. And we aspire to make you hold a good grip on these
-                concepts throughout the sessions. So, do participate and get
-                ready for building the backbone of powerful applications!
+                concepts throughout the sessions. So get ready for building the backbone of powerful applications!
               </p>
             </div>
           </div>

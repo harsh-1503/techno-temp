@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 .techno_heading{
   font-family: 'Blackpast',sans-serif;
-  
+
 }
 .logo-conatiner {
   width: 100%;
@@ -83,7 +83,7 @@
   }
 
   .techno_heading {
-    font-size: 14vw;
+    font-size: 12vw;
     color: rgb(255, 206, 39);
   }
 }

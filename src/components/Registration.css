@@ -3,7 +3,22 @@
 input {
   background-color: rgb(14, 14, 25);
 }
-
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
 .registration{
   font-family: 'Blackpast';
   /* font-family: 'Poppins',sans-serif; */
@@ -119,6 +134,7 @@ input {
 }
 
 .img_qr_one {
+  
   display: none;
 }
 
@@ -139,7 +155,7 @@ input {
 
 .register_btn {
   background-color: rgb(255, 206, 39);
-  height: 2.5rem;
+  /* height: 2.5rem;   */
   margin-bottom: 1em;
 }
 
@@ -167,7 +183,7 @@ input {
     /* margin: 0em;
     margin-right: 1em; */
     margin: auto;
-    width: 35%;
+    width: 85%;
   }
   .mx-auto {
     margin-left: 0;
@@ -231,6 +247,8 @@ input {
 
 @media only screen and (max-width: 560px) {
   .img_qr_one {
+    width: 80%;
+    margin: auto;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
   }
@@ -248,6 +266,8 @@ input {
     font-size: 1.6rem;
   }
 }
+
+
 
 @media only screen and (max-width: 400px) {
   .form {
