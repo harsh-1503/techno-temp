@@ -5,7 +5,7 @@ function Strips() {
     <>
       <section id='strips'>
         <div className='Technologies'>
-          <h1 className='font-semibold' style={{ fontSize: '3rem' }}>
+          <h1 className='font-semibold' style={{ fontSize: '2rem' }}>
             Technologies
           </h1>
         </div>
