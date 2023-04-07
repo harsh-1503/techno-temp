@@ -37,7 +37,7 @@ input {
 label, input, button {
   display: block;
   width: 100%;
-  padding: 0;
+  /* padding: 0; */
   border: none;
   outline: none;
   box-sizing: border-box;
@@ -59,7 +59,7 @@ input::placeholder {
 input ,select{
   background: #ecf0f3;
   padding: 10px;
-  padding-left: 10px;
+  padding-left: 1.1em;
   height: 50px;
   font-size: 14px;
   border-radius: 1em;

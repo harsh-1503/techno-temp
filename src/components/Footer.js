@@ -106,6 +106,7 @@ function Footer() {
               <a
                 href='https://wiki.wcewlug.org/policies/privacy-policy'
                 target='_blank'
+                rel='noreferrer'
               >
                 Privacy Policy
               </a>
@@ -115,6 +116,7 @@ function Footer() {
               <a
                 href='https://wiki.wcewlug.org/policies/terms-and-conditions'
                 target='_blank'
+                rel='noreferrer'
               >
                 Terms and Conditions
               </a>
@@ -123,6 +125,7 @@ function Footer() {
             <a
               href='https://wiki.wcewlug.org/policies/cancellation-refund-policy'
               target='_blank'
+              rel='noreferrer'
             >
               Cancellation/Refund Policy &nbsp;
             </a>

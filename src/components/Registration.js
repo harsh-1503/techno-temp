@@ -316,10 +316,10 @@ function Registration() {
 
                 <button
                   type="submit"
-                  style={{ color: "black", backgroundColor: "#ffc107",display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',gap:'1em' }}
+                  style={{ color: "black", backgroundColor: "#ffc107",fontWeight:"bold"}}
                 >
-                  <div>Register</div>
-                  {loading && <div className="loading-spinner"></div>}
+                  Register
+                  {/* {loading && <div className="loading-spinner"></div>} */}
                 </button>
                 
                   
