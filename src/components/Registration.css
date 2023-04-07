@@ -47,6 +47,7 @@ input {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .input_container input,
@@ -71,6 +72,7 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
 }
 
 .end_image:hover h1 {
@@ -103,8 +105,9 @@ input {
   margin: auto;
 }
 .img_qr {
-  margin: 3em;
-  margin-top: 0;
+ /* margin: 3em; */
+  /* margin-top: 0; */
+  margin:1em  auto;
 }
 .img_qr h5 {
   font-size: 1.05rem;
@@ -122,18 +125,21 @@ input {
 .register_btn {
   background-color: rgb(255, 206, 39);
   height: 2.5rem;
+  margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 1450px) {
+/* @media only screen and (max-width: 1450px) {
   .form {
     margin-right: 0;
     width: 70%;
   }
-}
+} */
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 600px) {
   .lowerdiv {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
   }
   .register-imgs {
     display: flex;
@@ -162,11 +168,19 @@ input {
   }
   .form {
     margin: 0;
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
   }
 }
-
+@media only screen and (max-width:900px){
+  .lowerdiv{
+    flex-direction: column;
+  }
+  .form{
+    width: 80%;
+    margin: auto;
+  }
+}
 @media only screen and (max-width: 768px) {
   .input-flex {
     flex-direction: column;
