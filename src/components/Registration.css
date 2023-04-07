@@ -105,12 +105,19 @@ input {
   width: 50%;
   margin: auto;
 }
-.img_qr {
+.img_qr_one,
+.img_qr_two {
   /* margin: 3em; */
   /* margin-top: 0; */
   margin: 1em auto;
 }
-.img_qr h5 {
+
+.img_qr_one {
+  display: none;
+}
+
+.img_qr_one h5,
+.img_qr_two h5 {
   font-size: 1.05rem;
 }
 .Select {
@@ -148,7 +155,8 @@ input {
   .end_image {
     width: 50%;
   }
-  .img_qr {
+  .img_qr_one,
+  .img_qr_two {
     margin: 0em;
     margin-right: 1em;
   }
@@ -169,6 +177,17 @@ input {
 @media only screen and (max-width: 900px) {
   .lowerdiv {
     flex-direction: column;
+  }
+
+  .img_qr_one {
+    display: block;
+  }
+  .img_qr_one .end_image {
+    display: none;
+  }
+  .img_qr_two h5,
+  .img_qr_two .register-imgs .QR {
+    display: none;
   }
   .form {
     width: 80%;
@@ -201,10 +220,15 @@ input {
 }
 
 @media only screen and (max-width: 560px) {
+  .img_qr_one {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
   .upperDiv h2 {
     font-size: 1.45rem;
   }
-  .img_qr h5 {
+  .img_qr_one h5,
+  .img_qr_two h5 {
     font-size: 1.05rem;
   }
   .input-flex label {

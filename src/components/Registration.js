@@ -66,6 +66,21 @@ function Registration() {
           </div>
 
           <div className='lowerdiv'>
+            <div className='img_qr_one'>
+              <h5 className='text-center font-weight-bold my-4 mx-4'>
+                Scan this QR code to make the payment
+              </h5>
+              <div className='register-imgs'>
+                <img
+                  src={img}
+                  className='QR rounded mx-auto w-1/4 sm:w-1/2 mb-12'
+                  alt='...'
+                />
+                <div className='end_image'>
+                  <img src={img3} alt='' className='mx-auto' />
+                </div>
+              </div>
+            </div>
             <form className='form' onSubmit={handleSubmit}>
               <div className='input-flex form-group border-none flex my-4 sm:my-1 input_container'>
                 <label for='exampleInputPassword1' className='basis-1/3'>
@@ -195,7 +210,7 @@ function Registration() {
                 </button>
               </div>
             </form>
-            <div className='img_qr'>
+            <div className='img_qr_two'>
               <h5 className='text-center font-weight-bold my-4 mx-4'>
                 Scan this QR code to make the payment
               </h5>
