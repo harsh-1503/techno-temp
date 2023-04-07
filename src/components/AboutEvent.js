@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import './AboutEvent.css'
 import ycircle from '../images/yellowcircle.png'
 import bcircle from '../images/bluecircle.png'
-
+import '../fonts/font.css'
 function AboutEvent() {
   const [hoveredf, setHoveredF] = useState(false)
   const [hoveredb, setHoveredB] = useState(false)
   return (
     <section id='experience'>
-      <h1 className='font-semibold' style={{ fontSize: '3rem' }}>
+      <h1 className='font-semibold' style={{ fontSize: '3rem' ,fontFamily:'Blackpast'}}>
         About The Event
       </h1>
       <p className=' mb-10 mx-10' style={{ color: 'rgb(64, 64, 64)' }}>
@@ -44,12 +44,7 @@ function AboutEvent() {
             </div>
             <div className='about'>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reprehenderit, vitae provident magnam ut blanditiis deleniti
-                fugiat vero culpa incidunt laborum Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ducimus, blanditiis. Quaerat odio
-                temporibus optio numquam tenetur molestias, nostrum blanditiis
-                modi!
+              Frontend involves developing the parts of a website that the user sees and interacts with. Here at Technotweet, we will help you with the topics like Reactjs, APIs, Hooks, and a hands-on project. A well-designed and optimized frontend is essential for creating  a successful and effective website so, do attend and get ready to build good websites!
               </p>
             </div>
           </div>
@@ -70,12 +65,7 @@ function AboutEvent() {
             </div>
             <div className='about'>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reprehenderit, vitae provident magnam ut blanditiis deleniti
-                fugiat vero culpa incidunt laborum Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ducimus, blanditiis. Quaerat odio
-                temporibus optio numquam tenetur molestias, nostrum blanditiis
-                modi!
+              The backend is the part that handles all the functionality of the website and everything about how things work on the server side. We will learn about the things like Nodejs, Express, and MongoDB in the event. And we aspire to make you hold a good grip on these concepts throughout the sessions.
               </p>
             </div>
           </div>

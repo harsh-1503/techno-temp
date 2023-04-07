@@ -1,5 +1,9 @@
 import React from 'react'
+import imgStrip1 from '../images/techno4-removebg-preview.png'
+import imgStrip2 from '../images/techno5-removebg-preview.png'
 import './Strips.css'
+import '../fonts/font.css'
+// D:\Techno\17\techno-temp\src\images\techno4-removebg-preview.png
 function Strips() {
   return (
     <>
@@ -213,6 +217,7 @@ function Strips() {
               <div id='expressJS'>ExpressJS</div>
             </div>
           </div>
+          {/* {imgStrip1} */}
           <div className='strip2'>
             <div className='strip2-text'>
               <div
@@ -340,6 +345,7 @@ function Strips() {
               </div>
             </div>
           </div>
+          {/* {imgStrip2} */}
           <div className='strip3'>
             <div className='strip3-text'>
               <di

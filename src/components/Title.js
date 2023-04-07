@@ -4,7 +4,7 @@ import img1 from '../images/techno1-removebg-preview.png'
 import img2 from '../images/techno12.png'
 import './Title.css'
 import wlug from '../images/WLUG.png'
-
+import '../fonts/font.css'
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
   const threshold = 700
@@ -47,8 +47,8 @@ function Title() {
           <p className='presents'>Presents</p>
           <div
             className='techno_heading'
-            style={{ fontFamily: "'Russo One', sans-serif" }}
           >
+            
             TechnoTweet 2k23
           </div>
         </div>

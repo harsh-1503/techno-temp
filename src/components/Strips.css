@@ -6,6 +6,7 @@
   text-align: center;
   margin: 10px;
   color: rgb(255, 206, 39);
+  font-family: 'Blackpast';
 }
 .html11 {
   height: 50px;
@@ -55,15 +56,17 @@
 
 .strip1,
 .strip3 {
-  backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px);
-  background: linear-gradient(to bottom, rgb(112, 197, 221), #eeeeee);
+  /* backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px); */
+  /* background: linear-gradient(to bottom, rgb(112, 197, 221), #eeeeee); */
+  box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.37);
 }
 
 .strip2 {
-  backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px);
-  background: linear-gradient(to bottom, rgb(255, 206, 39), #eeeeee);
+  /* backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px); */
+  /* background: linear-gradient(to bottom, rgb(255, 206, 39), #eeeeee); */
+  box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.37);
 }
 
 .strip1-text,
