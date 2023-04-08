@@ -17,7 +17,9 @@ input {
   overflow: hidden;
   font-family: poppins;
 } */
-
+.registration {
+  margin-top: 40px !important;
+}
 .newcontainer {
   position: relative;
   width: 350px;
@@ -72,6 +74,7 @@ select {
 button {
   color: white;
   margin-top: 20px !important;
+  margin-bottom: 40px !important;
   background: #1da1f2;
   height: 40px;
   border-radius: 20px;
