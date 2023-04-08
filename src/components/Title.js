@@ -7,7 +7,7 @@ import wlug from '../images/WLUG_black.png'
 import '../fonts/font.css'
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
-  const threshold = 700
+  const threshold = 800
   const factor = 1
 
   useEffect(() => {

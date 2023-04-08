@@ -11,7 +11,9 @@
   text-align: center;
   gap: 3rem;
 }
-
+.info-container {
+  background-color: #eeeeee;
+}
 .experienced_container:hover .frontend_container {
   transform: translateX(90px);
 }
