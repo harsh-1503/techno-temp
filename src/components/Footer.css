@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: row;
-  background-color: rgb(255, 206, 39);
+  background-color: rgb(37, 37, 37);
   align-items: center;
   flex-wrap: wrap;
   row-gap: 4rem;
@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: white;
 }
 
 .stay_tuned {
@@ -46,7 +47,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
 }
+
 .navli {
   display: flex;
   flex-direction: row;
@@ -64,6 +67,13 @@
 .policies div a {
   text-decoration: none;
   text-align: center;
+}
+
+.navli a:hover,
+.policies a:hover,
+.ics a:hover {
+  color: #f3db16;
+  text-decoration: none;
 }
 
 .ics {

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import img1 from '../images/techno1-removebg-preview.png'
 import img2 from '../images/techno12.png'
 import './Title.css'
-import wlug from '../images/WLUG.png'
+import wlug from '../images/WLUG_black.png'
 import '../fonts/font.css'
 function Title() {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -45,12 +45,7 @@ function Title() {
           <p className='club_name1'>Walchand Linux Users' Group</p>
 
           <p className='presents'>Presents</p>
-          <div
-            className='techno_heading'
-          >
-            
-            TechnoTweet 2k23
-          </div>
+          <div className='techno_heading'>TechnoTweet 2k23</div>
         </div>
         <div
           className='img2'
