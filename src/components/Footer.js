@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import wlug from '../images/WLUG.png'
+import wlug from '../images/WLUD_white.png'
 import Tux from '../images/TuxColourful.png'
 function Footer() {
   return (

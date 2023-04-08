@@ -11,7 +11,9 @@
   text-align: center;
   gap: 3rem;
 }
-
+.info-container {
+  background-color: #eeeeee;
+}
 .experienced_container:hover .frontend_container {
   transform: translateX(90px);
 }
@@ -198,6 +200,9 @@
   .about {
     margin-right: 1.5rem;
     margin-left: 1rem;
+  }
+  #experience {
+    background-color: #eeeeee;
   }
 }
 

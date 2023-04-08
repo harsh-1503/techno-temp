@@ -19,7 +19,7 @@ input {
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
 }
-.registration{
+.registration {
   font-family: 'Blackpast';
   /* font-family: 'Poppins',sans-serif; */
 }
@@ -44,7 +44,7 @@ input {
   justify-content: center;
 }
 .upperDiv h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .whole_form {
   display: flex;
@@ -66,10 +66,13 @@ input {
 }
 .lowerdiv {
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
 }
 
 .input_container input,
@@ -112,12 +115,8 @@ input {
   visibility: hidden;
 }
 
-.lowerdiv {
-  flex-direction: row;
-}
-
 .input-flex {
-  flex-direction: row ;
+  flex-direction: row;
 }
 .input-flex label {
   font-size: 1.25rem;
@@ -134,7 +133,6 @@ input {
 }
 
 .img_qr_one {
-  
   display: none;
 }
 
@@ -266,8 +264,6 @@ input {
     font-size: 1.6rem;
   }
 }
-
-
 
 @media only screen and (max-width: 400px) {
   .form {
