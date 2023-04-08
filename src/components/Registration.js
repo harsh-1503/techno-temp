@@ -243,9 +243,9 @@ function Registration() {
                   id='exampleInputEmail1'
                   autoComplete='off'
                   required
-                  placeholder='abc@gmail.com'
+                  placeholder='Email'
                 />
-                <label for='collegeName'>Phone No:</label>
+                <label for='collegeName'>Phone No</label>
                 <input
                   type='tel'
                   name='phoneno'
@@ -286,7 +286,7 @@ function Registration() {
                   <option value='Third Year'>Third Year</option>
                   <option value='Fourth Year'>Fourth Year</option>
                 </select>
-                <label for='inputGroupSelect01'>Select Course:</label>
+                <label for='inputGroupSelect01'>Select Course </label>
                 <select
                   id='inputGroupSelect01'
                   name='course'
@@ -319,6 +319,8 @@ function Registration() {
                     color: 'black',
                     backgroundColor: '#ffc107',
                     fontWeight: 'bold',
+                    borderRadius: '0.7rem', 
+                    height: '2.5rem',
                   }}
                 >
                   Register

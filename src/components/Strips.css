@@ -5,6 +5,7 @@
 .Technologies {
   text-align: center;
   margin: 10px;
+  margin-top: 20px;
   color: rgb(255, 206, 39);
   font-family: 'Blackpast';
 }
@@ -53,7 +54,9 @@
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(15px);
 }
-
+.strip1 {
+  margin-top: 2.5em;
+}
 .strip1,
 .strip3 {
   /* backdrop-filter: blur(5.4px);

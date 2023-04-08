@@ -201,6 +201,9 @@
     margin-right: 1.5rem;
     margin-left: 1rem;
   }
+  #experience {
+    background-color: #eeeeee;
+  }
 }
 
 @media only screen and (max-width: 556px) {
