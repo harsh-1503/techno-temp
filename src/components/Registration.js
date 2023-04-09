@@ -4,16 +4,22 @@ import img1 from "../images/149qr.png";
 import img2 from "../images/179qr.png";
 import img3 from "../images/form1-removebg-preview.png";
 import hurrayImg from "../images/hurray.png";
-import { createGlobalState } from "react-hooks-global-state";
+// import { createGlobalState } from "react-hooks-global-state";
 // import oops from '../images/oops.png'
 // import swal from 'sweetalert'
-import * as API from "../API/registrationAPI";
+import axios from "axios";
+import swal from "sweetalert2";
+import "../API/alerts.css";
+
+// import * as API from "../API/registrationAPI";
 // import Spinner from "react-bootstrap/Spinner";
 import "../fonts/font.css";
 import "./inputs.css";
 // import { MDBSpinner } from "mdb-react-ui-kit";
 import { ColorRing } from "react-loader-spinner";
-
+const API = axios.create({
+  baseURL: "https://technobackend-production.up.railway.app/",
+});
 // const {setGlobalState,useGlobalState} = createGlobalState(false);
 function Registration() {
   const [img, setimg] = useState(img1);
@@ -44,11 +50,146 @@ function Registration() {
     console.log(formData);
   };
 
-  const handleSubmit =  (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setisLoading(true);
-    const data =  API.getData(formData);
-    setisLoading(false);
+    try {
+      // console.log(formData);
+      // setGlobalState(true);
+      setisLoading(true);
+      const res = await API.post("/getData", formData);
+      setisLoading(false);
+      // setGlobalState(false);
+      console.log("res :");
+      console.log(res);
+      console.log(res.data.postdata.phone.toString().length);
+      if (res.data.postdata.phone.toString().length !== 10) {
+        swal.fire({
+          title: "Invalid Phone Number",
+          imageUrl:
+            "https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png",
+          // imageHeight: 200,
+          // imageWidth: 200,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "OK",
+          animation: "true",
+          customClass: {
+            popup: "alert-box animated fadeInDown faster",
+            confirmButton: "animated bounceIn faster",
+            cancelButton: "animated bounceIn faster",
+          },
+        });
+      } else if (res.status === 201) {
+        // alert('You have successfully Registered. Check email for confirmation')
+        swal
+          .fire({
+            title: "Registered Successfully!! Check email for confirmation.",
+            // text: 'This action will reload the window',
+            // icon: 'success',
+            // showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            // cancelButtonColor: '#d33',
+            confirmButtonText: "Continue",
+            imageUrl:
+              "https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png",
+            // imageHeight: 200,
+            // imageWidth: 300,
+            // animation: 'true',
+            customClass: {
+              popup: "animated fadeInDown faster",
+              confirmButton: "animated bounceIn faster",
+              cancelButton: "animated bounceIn faster",
+            },
+          })
+          .then((result) => {
+            if (result.isConfirmed) {
+              // window.location.reload();
+              setFormData({
+                name: "",
+                email: "",
+                phoneno: "",
+                transactionId: "",
+                collegeName: "",
+                yearOfStudy: "First year",
+                course: "Frontend",
+                isDualBooted: "",
+              });
+            }
+          });
+        return true;
+      }
+      console.log(res);
+      return true;
+    } catch (err) {
+      console.log("err :");
+      console.log(err);
+      setisLoading(false);
+      if (
+        err.response.data.success === "false" &&
+        err.response.data.message === "Email Already Registered"
+      ) {
+        swal.fire({
+          title: "Email already registered!!! Try using different email.",
+          imageUrl:
+            "https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png",
+          imageHeight: 200,
+          imageWidth: 200,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "OK",
+          animation: "true",
+          customClass: {
+            popup: "animated fadeInDown faster",
+            confirmButton: "animated bounceIn faster",
+            cancelButton: "animated bounceIn faster",
+          },
+        });
+        return false;
+      } else if (
+        err.response.data.success === "false" &&
+        err.response.data.message === "Transaction id already used"
+      ) {
+        swal.fire({
+          title: "Transaction ID already used. Try different one!!",
+          imageUrl:
+            "https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png",
+          imageHeight: 200,
+          imageWidth: 200,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "OK",
+          animation: "true",
+          customClass: {
+            popup: "animated fadeInDown faster",
+            confirmButton: "animated bounceIn faster",
+            cancelButton: "animated bounceIn faster",
+          },
+        });
+        return false;
+      } else if (
+        err.response.data.success === "false" &&
+        err.response.data.message === "Invalid mobile number"
+      ) {
+        swal.fire({
+          title: "Invalid mobile number",
+          imageUrl:
+            "https://res.cloudinary.com/dizrxbb27/image/upload/v1680810676/TechnoTweet/oops_qrmge0.png",
+          imageHeight: 300,
+          imageWidth: 200,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "OK",
+          animation: "true",
+          customClass: {
+            popup: "animated fadeInDown faster",
+            confirmButton: "animated bounceIn faster",
+            cancelButton: "animated bounceIn faster",
+          },
+        });
+        return false;
+      }
+
+      return false;
+    }
+    // const data =  API.getData(formData);
+    // setisLoading(false);
     // sethurray(true)
   };
 
@@ -196,25 +337,26 @@ function Registration() {
                     backgroundColor: "#ffc107",
                     fontWeight: "bold",
                     borderRadius: "0.7rem",
-                    display:"flex",
-                    flexDirection:"row",
-                    justifyContent:'center',
-                    alignItems:'center',
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
                   }}
                 >
                   <div>Register</div>
-                  <div>{isLoading && (
-                    <ColorRing
-                      visible={true}
-                      // height="60"
-                      width="40"
-                      ariaLabel="blocks-loading"
-                      wrapperStyle={{}}
-                      wrapperClass="blocks-wrapper"
-                      colors={["#000000"]}
-                    />
-                  )}</div>
-                  
+                  <div>
+                    {isLoading && (
+                      <ColorRing
+                        visible={true}
+                        // height="60"
+                        width="40"
+                        ariaLabel="blocks-loading"
+                        wrapperStyle={{}}
+                        wrapperClass="blocks-wrapper"
+                        colors={["#000000"]}
+                      />
+                    )}
+                  </div>
                 </button>
               </div>
             </form>
