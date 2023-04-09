@@ -13,19 +13,19 @@
 
 .one {
   transform: translateY(-50px);
-  animation: movingone 1s alternate infinite;
+  animation: movingone 1.5s alternate infinite;
   transition: transform 0.7s;
 }
 
 .two {
   transform: translateY(50px);
-  animation: movingtwo 1s alternate infinite;
+  animation: movingtwo 1.5s alternate infinite;
   transition: transform 0.1s;
 }
 
 .three {
   transform: translateY(-50px);
-  animation: movingthree 1s alternate infinite;
+  animation: movingthree 1.5s alternate infinite;
   transition: transform 0.7s;
 }
 
