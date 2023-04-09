@@ -15,7 +15,15 @@ function AboutEvent() {
         About The Event
       </h1>
       <div className='info-container'>
-        <p className=' mb-10 mx-10' style={{ color: 'rgb(64, 64, 64)' }}>
+        <p
+          className=' mb-10 mx-10'
+          style={{
+            color: 'rgb(64, 64, 64)',
+            textAlign: 'center',
+            paddingLeft: '0.5rem',
+            paddingRight: '0.5rem',
+          }}
+        >
           Technotweet 2k23 is a two-day web development workshop hosted by
           Walchand Linux Users' Group, with a primary focus on the MERN stack.
           The topics will vary from basics of React, Node.js, MongoDB,
@@ -40,9 +48,7 @@ function AboutEvent() {
             onMouseOut={() => setHoveredF(false)}
           >
             <div className='frontend_heading'>
-              <h3 className='font-semibold mb-4 sm:mb-1'>
-                Frontend Development
-              </h3>
+              <h3 className='font-bold mb-4 sm:mb-1'>Frontend Development</h3>
             </div>
             <div className='stack'>
               <div className='circle-container'>

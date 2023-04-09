@@ -29,7 +29,7 @@
   box-shadow: 6px 6px 0px 1px rgb(255, 206, 39);
   transition: all 0.2s;
   border: 2px solid rgb(255, 206, 39);
-  background-color: rgb(83, 189, 231);
+  background-color: #41b5ff;
   border: 2px solid rgb(255, 206, 39);
 }
 
@@ -43,7 +43,7 @@
 
 .frontend_container:hover {
   background: transparent;
-  background-color: rgb(83, 189, 231);
+  background-color: #41b5ff;
   transition: var(--transition);
 }
 
@@ -69,7 +69,7 @@
 
 .backend_container:hover .backend_heading h3,
 .frontend_container:hover .frontend_heading h3 {
-  color: rgb(83, 189, 231);
+  color: #41b5ff;
   font-weight: 900;
   font-size: 1.8rem;
   text-shadow: none;
