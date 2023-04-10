@@ -11,6 +11,23 @@ input {
     transform: rotate(360deg);
   }
 }
+
+.register_btn {
+  padding: 1.5em 5em;
+  background: #efefef;
+  border: none;
+  border-radius: 1em;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  
+}
+
 .loading-spinner {
   width: 20px;
   height: 20px;
@@ -19,6 +36,7 @@ input {
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
 }
+
 .registration {
   font-family: 'Blackpast';
   /* font-family: 'Poppins',sans-serif; */
@@ -82,12 +100,12 @@ input {
 
 .input_container input:hover,
 .input_container select:hover {
-  background-color: rgb(83, 189, 231);
+  /* background-color: rgb(83, 189, 231); */
 }
 
 .input_container input:focus,
 .input_container select:focus {
-  background-color: rgb(83, 189, 231);
+  /* background-color: rgb(83, 189, 231); */
   outline: none;
   color: black;
   box-shadow: none;

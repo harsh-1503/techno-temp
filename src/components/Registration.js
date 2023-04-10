@@ -3,32 +3,20 @@ import "./Registration.css";
 import img1 from "../images/149qr.png";
 import img2 from "../images/179qr.png";
 import img3 from "../images/form1-removebg-preview.png";
-import hurrayImg from "../images/hurray.png";
-// import { createGlobalState } from "react-hooks-global-state";
-// import oops from '../images/oops.png'
-// import swal from 'sweetalert'
 import axios from "axios";
 import swal from "sweetalert2";
 import "../API/alerts.css";
-
-// import * as API from "../API/registrationAPI";
-// import Spinner from "react-bootstrap/Spinner";
 import "../fonts/font.css";
 import "./inputs.css";
-// import { MDBSpinner } from "mdb-react-ui-kit";
 import { ColorRing } from "react-loader-spinner";
 const API = axios.create({
   baseURL: "https://technobackend-production.up.railway.app/",
 });
-// const {setGlobalState,useGlobalState} = createGlobalState(false);
+
 function Registration() {
   const [img, setimg] = useState(img1);
-  // const isLoading = useGlobalState(false);
   const [isLoading, setisLoading] = useState(false);
   const [domain, setDomain] = useState("Frontend");
-  // const [loading, setloading] = useState(false);
-  // const [hurray, sethurray] = useState(false)
-  // const [oops, setoops] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -54,12 +42,10 @@ function Registration() {
     e.preventDefault();
     setisLoading(true);
     try {
-      // console.log(formData);
-      // setGlobalState(true);
       setisLoading(true);
       const res = await API.post("/getData", formData);
       setisLoading(false);
-      // setGlobalState(false);
+
       console.log("res :");
       console.log(res);
       console.log(res.data.postdata.phone.toString().length);
@@ -68,13 +54,13 @@ function Registration() {
           title: "Invalid Phone Number",
           imageUrl:
             "https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png",
-          // imageHeight: 200,
+          imageHeight: 200,
           // imageWidth: 200,
           confirmButtonColor: "#3085d6",
           confirmButtonText: "OK",
           animation: "true",
           customClass: {
-            popup: "alert-box animated fadeInDown faster",
+            popup: "animated fadeInDown faster",
             confirmButton: "animated bounceIn faster",
             cancelButton: "animated bounceIn faster",
           },
@@ -84,17 +70,12 @@ function Registration() {
         swal
           .fire({
             title: "Registered Successfully!! Check email for confirmation.",
-            // text: 'This action will reload the window',
-            // icon: 'success',
-            // showCancelButton: true,
+            imageHeight:200,
             confirmButtonColor: "#3085d6",
-            // cancelButtonColor: '#d33',
+
             confirmButtonText: "Continue",
             imageUrl:
               "https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png",
-            // imageHeight: 200,
-            // imageWidth: 300,
-            // animation: 'true',
             customClass: {
               popup: "animated fadeInDown faster",
               confirmButton: "animated bounceIn faster",
@@ -103,7 +84,6 @@ function Registration() {
           })
           .then((result) => {
             if (result.isConfirmed) {
-              // window.location.reload();
               setFormData({
                 name: "",
                 email: "",
@@ -240,7 +220,7 @@ function Registration() {
             </div>
             <form className="form" onSubmit={handleSubmit}>
               <div className="inputs">
-                <label for="exampleInputPassword1">Name</label>
+                <label htmlFor="exampleInputPassword1">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -251,7 +231,7 @@ function Registration() {
                   required
                   placeholder="Full Name"
                 />
-                <label for="exampleInputEmail1">Email ID</label>
+                <label htmlFor="exampleInputEmail1">Email ID</label>
                 <input
                   type="email"
                   name="email"
@@ -262,7 +242,7 @@ function Registration() {
                   required
                   placeholder="Email"
                 />
-                <label for="collegeName">Phone No</label>
+                <label htmlFor="collegeName">Phone No</label>
                 <input
                   type="tel"
                   name="phoneno"
@@ -274,7 +254,7 @@ function Registration() {
                   required
                   placeholder="9876543210"
                 />
-                <label for="collegeName">College Name</label>
+                <label htmlFor="collegeName">College Name</label>
                 <input
                   type="text"
                   name="collegeName"
@@ -286,7 +266,7 @@ function Registration() {
                   required
                   placeholder="Walchand College of Engineering, Sangli"
                 />
-                <label for="yearOfStudy">Year of Study</label>
+                <label htmlFor="yearOfStudy">Year of Study</label>
                 <select
                   id="yearOfStudy"
                   name="yearOfStudy"
@@ -303,7 +283,7 @@ function Registration() {
                   <option value="Third Year">Third Year</option>
                   <option value="Fourth Year">Fourth Year</option>
                 </select>
-                <label for="inputGroupSelect01">Select Course </label>
+                <label htmlFor="inputGroupSelect01">Select Course </label>
                 <select
                   id="inputGroupSelect01"
                   name="course"
@@ -316,7 +296,7 @@ function Registration() {
                   <option>Frontend</option>
                   <option>Backend</option>
                 </select>
-                <label for="paymentID" className="basis-1/3 ">
+                <label htmlFor="paymentID" className="basis-1/3 ">
                   Transaction ID
                 </label>
                 <input
@@ -332,23 +312,14 @@ function Registration() {
 
                 <button
                   type="submit"
-                  style={{
-                    color: "black",
-                    backgroundColor: "#ffc107",
-                    fontWeight: "bold",
-                    borderRadius: "0.7rem",
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
+                  className="reg_btn"
                 >
                   <div>Register</div>
                   <div>
                     {isLoading && (
                       <ColorRing
                         visible={true}
-                        // height="60"
+                        height="40"
                         width="40"
                         ariaLabel="blocks-loading"
                         wrapperStyle={{}}
@@ -386,4 +357,3 @@ function Registration() {
 }
 
 export default Registration;
-// export {useGlobalState,setGlobalState}

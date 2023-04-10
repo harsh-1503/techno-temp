@@ -33,7 +33,7 @@ function Strips() {
               >
                 {' '}
                 <img
-                  src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png'
+                  src='https://res.cloudinary.com/dizrxbb27/image/upload/v1681117215/TechnoTweet/rest-api-icon_su104w.png'
                   alt='...'
                 />
                 REST API
@@ -78,7 +78,7 @@ function Strips() {
               >
                 {' '}
                 <img
-                  src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png'
+                  src='https://res.cloudinary.com/dizrxbb27/image/upload/v1681117215/TechnoTweet/rest-api-icon_su104w.png'
                   alt='...'
                 />
                 REST API
@@ -123,7 +123,7 @@ function Strips() {
               >
                 {' '}
                 <img
-                  src='https://phabricator.universitaspertamina.ac.id/file/data/auiq53fghptdyl4tbsbz/PHID-FILE-vryehvowidp5c65kzujy/1%2AuHzooF1EtgcKn9_XiSST4w.png'
+                  src='https://res.cloudinary.com/dizrxbb27/image/upload/v1681117215/TechnoTweet/rest-api-icon_su104w.png'
                   alt='...'
                 />
                 REST API
@@ -165,6 +165,7 @@ function Strips() {
               '
                 id='rest_api'
               >
+                <img src='https://res.cloudinary.com/dizrxbb27/image/upload/v1681117215/TechnoTweet/rest-api-icon_su104w.png' alt='...'/>
                 REST API
               </div>
               <div
@@ -205,6 +206,7 @@ function Strips() {
               '
                 id='rest_api'
               >
+                <img src='https://res.cloudinary.com/dizrxbb27/image/upload/v1681117215/TechnoTweet/rest-api-icon_su104w.png' alt='...'/>
                 REST API
               </div>
               <div

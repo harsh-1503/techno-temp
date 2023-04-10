@@ -72,21 +72,26 @@ select {
 }
 
 button {
-  color: white;
+  /* color: white; */
   margin-top: 20px !important;
   margin-bottom: 40px !important;
-  background: #1da1f2;
+  background-color: #ffc107 !important;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 1em;
   cursor: pointer;
   font-weight: 900;
   box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
   transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
   box-shadow: none;
 }
+
 
 /* new */
 

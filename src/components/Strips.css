@@ -13,7 +13,6 @@
   height: 50px;
   width: 1em;
 }
-
 .strips {
   backdrop-filter: blur(15px);
 }
@@ -37,6 +36,7 @@
   overflow-x: hidden;
   margin-top: 100px;
 }
+
 
 .strip1,
 .strip2,
