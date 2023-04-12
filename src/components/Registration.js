@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Registration.css";
-import img1 from "../images/149qr.png";
-import img2 from "../images/179qr.png";
+import img1 from "../images/149qr2.png";
+import img2 from "../images/200qr2.png";
 import img3 from "../images/form1-removebg-preview.png";
 import axios from "axios";
 import swal from "sweetalert2";

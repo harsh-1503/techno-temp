@@ -5,6 +5,7 @@ import AboutEvent from './components/AboutEvent'
 import Registration from './components/Registration'
 import Footer from './components/Footer'
 import ImagesMain from './components/ImagesMain'
+import Sponsor from './components/Sponsor'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutEvent />
       <ImagesMain />
       <Registration />
+      <Sponsor/>
       <Footer />
     </>
   )
