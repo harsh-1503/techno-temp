@@ -50,6 +50,7 @@ function Registration() {
       console.log(res);
       console.log(res.data.postdata.phone.toString().length);
       if (res.data.postdata.phone.toString().length !== 10) {
+        console.log('try');
         swal.fire({
           title: "Invalid Phone Number",
           imageUrl:
@@ -148,8 +149,27 @@ function Registration() {
         err.response.data.success === "false" &&
         err.response.data.message === "Invalid mobile number"
       ) {
+        console.log('catch');
         swal.fire({
           title: "Invalid mobile number",
+          imageUrl:
+            "https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png",
+          imageHeight: 300,
+          imageWidth: 200,
+          confirmButtonColor: "#3085d6",
+          confirmButtonText: "OK",
+          animation: "true",
+          customClass: {
+            popup: "animated fadeInDown faster",
+            confirmButton: "animated bounceIn faster",
+            cancelButton: "animated bounceIn faster",
+          },
+        });
+        return false;
+      }
+      else{
+        swal.fire({
+          title: "Something went wrong!! Try again.",
           imageUrl:
             "https://res.cloudinary.com/dizrxbb27/image/upload/v1680810676/TechnoTweet/oops_qrmge0.png",
           imageHeight: 300,
@@ -165,8 +185,6 @@ function Registration() {
         });
         return false;
       }
-
-      return false;
     }
     // const data =  API.getData(formData);
     // setisLoading(false);
