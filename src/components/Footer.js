@@ -95,8 +95,8 @@ function Footer() {
         </div>
         <div class='navigation'>
           <div class='navli'>
-            <a href='#'>Home</a>
-            <a href='https://www.wcewlug.org/' target='_blank'>
+            <a href='#home'>Home</a>
+            <a href='https://www.wcewlug.org/' target='_blank' rel='noreferrer'>
               About Us
             </a>
             <a href='#register'>Register</a>

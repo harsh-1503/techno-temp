@@ -26,7 +26,7 @@ function Title() {
   const translateY = scrollPosition > threshold ? 0 : scrollPosition
 
   return (
-    <>
+    <div id='home'>
       <div className='logo-conatiner'>
         <img src={wlug} alt='' />
       </div>
@@ -54,7 +54,7 @@ function Title() {
           <img src={img2} alt='' />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
