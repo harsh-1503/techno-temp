@@ -91,7 +91,7 @@ function Registration() {
                 transactionId: '',
                 collegeName: '',
                 yearOfStudy: 'First year',
-                course: 'Frontend',
+                course: 'Both',
                 isDualBooted: '',
               })
             }
