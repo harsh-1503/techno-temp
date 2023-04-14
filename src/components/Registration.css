@@ -184,6 +184,7 @@ input {
   .register-imgs {
     display: flex;
     justify-content: space-around;
+    margin: auto;
   }
   .w-1\/4 {
     width: 200px;
@@ -206,6 +207,7 @@ input {
     margin-right: 0;
   }
   .register-imgs {
+    width: 50%;
     justify-content: space-evenly;
     align-items: center;
   }

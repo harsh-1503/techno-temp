@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Registration.css'
-import img1 from '../images/149qr2.png'
-import img2 from '../images/200qr2.png'
+import img1 from '../images/149qr5.jpg'
+import img2 from '../images/200qr3.png'
 import img3 from '../images/form1-removebg-preview.png'
 import axios from 'axios'
 import swal from 'sweetalert2'
@@ -14,9 +14,9 @@ const API = axios.create({
 })
 
 function Registration() {
-  const [img, setimg] = useState(img1)
+  const [img, setimg] = useState(img2)
   const [isLoading, setisLoading] = useState(false)
-  const [domain, setDomain] = useState('Both')
+  const [domain, setDomain] = useState('Frontend and Backend')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -181,7 +181,7 @@ function Registration() {
     const courseSelector = document.getElementById('inputGroupSelect01')
     if (courseSelector.value === 'Both') {
       setimg(img2)
-      setDomain('Both')
+      setDomain('Frontend and Backend')
     } else if (courseSelector.value === 'Frontend') {
       setimg(img1)
       setDomain('Frontend')
