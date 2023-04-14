@@ -26,6 +26,7 @@ function Registration() {
     yearOfStudy: 'First year',
     course: 'Both',
     isDualBooted: '',
+    githubid:'',
   })
 
   const handleChange = (event) => {
@@ -77,6 +78,7 @@ function Registration() {
                 yearOfStudy: 'First year',
                 course: 'Both',
                 isDualBooted: '',
+                githubid:'',
               })
             }
           })
@@ -297,7 +299,7 @@ function Registration() {
                   <option>Frontend</option>
                   <option>Backend</option>
                 </select>
-                <label htmlFor='paymentID' className='basis-1/3 '>
+                <label htmlFor='paymentID'>
                   Transaction ID
                 </label>
                 <input
@@ -306,6 +308,20 @@ function Registration() {
                   value={formData.transactionId}
                   onChange={handleChange}
                   id='paymentID'
+                  aria-describedby='emailHelp'
+                  autoComplete='off'
+                  required
+                />
+                <label htmlFor='githubid'  >
+                  Github profile link
+                </label>
+                <input
+                  type='text'
+                  name='githubid'
+                  value={formData.githubid}
+                  onChange={handleChange}
+                  id='githubid'
+                  placeholder='https://github.com/user-name'
                   aria-describedby='emailHelp'
                   autoComplete='off'
                   required
