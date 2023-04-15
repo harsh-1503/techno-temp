@@ -64,6 +64,8 @@
   .image_conatiner {
     flex-direction: column;
     justify-content: center;
+    width: 95%;
+    margin: auto;
     gap: 4em;
   }
   .image_conatiner div img {

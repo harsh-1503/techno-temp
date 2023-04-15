@@ -3,7 +3,6 @@ import './Images.css'
 
 const Images = (props) => {
   return (
-    <>
       <div className='image_conatiner'>
         <div className='box one'>
           <img src={props.img1} alt={props.alt1} />
@@ -15,7 +14,7 @@ const Images = (props) => {
           <img src={props.img3} alt={props.alt3} />
         </div>
       </div>
-    </>
+    
   )
 }
 

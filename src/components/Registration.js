@@ -213,7 +213,7 @@ function Registration() {
               <div className='register-imgs'>
                 <img
                   src={img}
-                  className='QR rounded mx-auto w-1/4 sm:w-1/2 mb-12'
+                  className='QR'
                   alt='...'
                 />
                 <div className='end_image'>
@@ -310,6 +310,7 @@ function Registration() {
                   id='paymentID'
                   aria-describedby='emailHelp'
                   autoComplete='off'
+                  placeholder='UPI Ref No / UPI Transaction id / UTR'
                   required
                 />
                 <label htmlFor='githubid'  >
@@ -355,7 +356,7 @@ function Registration() {
               <div className='register-imgs'>
                 <img
                   src={img}
-                  className='QR rounded mx-auto w-1/4 sm:w-1/2 mb-12'
+                  className='QR'
                   alt='...'
                 />
                 <div className='end_image'>
