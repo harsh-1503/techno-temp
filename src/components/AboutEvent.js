@@ -22,23 +22,10 @@ function AboutEvent() {
             textAlign: 'center',
             paddingLeft: '0.5rem',
             paddingRight: '0.5rem',
+            // fontFamily:'Ubuntu',
           }}
         >
-          Technotweet 2k23 is a two-day web development workshop hosted by
-          Walchand Linux Users' Group, with a primary focus on the MERN stack.
-          The topics will vary from basics of React, Node.js, MongoDB,
-          Express.js, and a project which will be continued throughout the whole
-          workshop. Our engaging sessions will give you ample practice in
-          real-life development, and our exciting competitions at the end of
-          each day will put your newly acquired knowledge to the test. Whether
-          you're a seasoned expert or a novice just starting out, Technotweet
-          2k23 is the perfect opportunity to hone your skills and gain a
-          comprehensive understanding of web development. By the end of the
-          workshop, you'll have a firm grasp of all the topics covered, and be
-          equipped to take your development skills to the next level. So don't
-          miss out on this incredible opportunity to explore the world of
-          development. Show your enthusiasm and excitement for learning, and
-          join us for Technotweet 2k23!
+          <strong>Technotweet 2k23</strong> is a two-day web development workshop hosted by Walchand Linux Users' Group, with a primary focus on the<strong> MERN </strong>stack. The topics will vary from basics of React, Node.js, MongoDB, Express.js, and a project which will be continued throughout the whole workshop. Our engaging sessions will give you ample practice in real-life development, and our exciting competitions at the end of each day will put your newly acquired knowledge to the test. Whether you're a seasoned expert or a novice just starting out, Technotweet 2k23 is the perfect opportunity to hone your skills and gain a comprehensive understanding of web development. By the end of the workshop, you'll have a firm grasp of all the topics covered, and be equipped to take your development skills to the next level. So mark your calendars for<strong> 29th and 30th April</strong> and don't miss out on this incredible opportunity to explore the world of development. Show your enthusiasm and excitement for learning, and join us for Technotweet 2k23!
         </p>
 
         <div className='experienced_container '>
