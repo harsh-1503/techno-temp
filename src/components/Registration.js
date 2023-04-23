@@ -10,7 +10,7 @@ import '../fonts/font.css'
 import './inputs.css'
 import { ColorRing } from 'react-loader-spinner'
 const API = axios.create({
-  baseURL: 'https://technobackend-production.up.railway.app/',
+  baseURL: 'https://technotweet-backend-wlug.onrender.com',
 })
 
 function Registration() {
