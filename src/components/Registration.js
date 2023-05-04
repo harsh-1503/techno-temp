@@ -41,61 +41,9 @@ function Registration() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setisLoading(true)
-    try {
-      setisLoading(true)
-      const res = await API.post('/getData', formData)
-      setisLoading(false)
-
-      console.log('res :')
-      console.log(res)
-      console.log(res.data.postdata.phone.toString().length)
-      if (res.status === 201) {
-        // alert('You have successfully Registered. Check email for confirmation')
-        swal
-          .fire({
-            title: 'Registered Successfully!! Check email for confirmation.',
-            imageHeight: 200,
-            confirmButtonColor: '#3085d6',
-
-            confirmButtonText: 'Continue',
-            imageUrl:
-              'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png',
-            customClass: {
-              popup: 'animated fadeInDown faster',
-              confirmButton: 'animated bounceIn faster',
-              cancelButton: 'animated bounceIn faster',
-            },
-          })
-          .then((result) => {
-            if (result.isConfirmed) {
-              setFormData({
-                name: '',
-                email: '',
-                phoneno: '',
-                transactionId: '',
-                collegeName: '',
-                yearOfStudy: 'First year',
-                course: 'Both',
-                isDualBooted: '',
-                githubid:'',
-              })
-            }
-          })
-        return true
-      }
-      console.log(res)
-      return true
-    } catch (err) {
-      console.log('err :')
-      console.log(err)
-      setisLoading(false)
-      if (
-        err.response.data.success === 'false' &&
-        err.response.data.message === 'Email Already Registered'
-      ) {
-        swal.fire({
-          title: 'Email already registered!!! Try using different email.',
+    // setisLoading(true)
+    swal.fire({
+          title: 'Forms are closed !!! See You at next event.',
           imageUrl:
             'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
           imageHeight: 200,
@@ -109,72 +57,142 @@ function Registration() {
             cancelButton: 'animated bounceIn faster',
           },
         })
-        return false
-      } else if (
-        err.response.data.success === 'false' &&
-        err.response.data.message === 'Transaction id already used'
-      ) {
-        swal.fire({
-          title: 'Transaction ID already used. Try different one!!',
-          imageUrl:
-            'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
-          imageHeight: 200,
-          imageWidth: 200,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'OK',
-          animation: 'true',
-          customClass: {
-            popup: 'animated fadeInDown faster',
-            confirmButton: 'animated bounceIn faster',
-            cancelButton: 'animated bounceIn faster',
-          },
-        })
-        return false
-      } else if (
-        err.response.data.success === 'false' &&
-        err.response.data.message === 'Invalid mobile number'
-      ) {
-        // console.log('catch');
-        swal.fire({
-          title: 'Invalid mobile number',
-          imageUrl:
-            'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
-          imageHeight: 300,
-          imageWidth: 200,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'OK',
-          animation: 'true',
-          customClass: {
-            popup: 'animated fadeInDown faster',
-            confirmButton: 'animated bounceIn faster',
-            cancelButton: 'animated bounceIn faster',
-          },
-        })
-        return false
-      }
-      else{
-        swal.fire({
-          title: 'Something went wrong!! Try again after some time.',
-          imageUrl:
-            'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
-          imageHeight: 300,
-          imageWidth: 200,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'OK',
-          animation: 'true',
-          customClass: {
-            popup: 'animated fadeInDown faster',
-            confirmButton: 'animated bounceIn faster',
-            cancelButton: 'animated bounceIn faster',
-          },
-        })
-        return false
-      }
-    }
-    // const data =  API.getData(formData);
-    // setisLoading(false);
-    // sethurray(true)
-  }
+  //   try {
+  //     setisLoading(true)
+  //     // const res = await API.post('/getData', formData)
+  //     setisLoading(false)
+
+  //     console.log('res :')
+  //   //   console.log(res)
+  //   //   console.log(res.data.postdata.phone.toString().length)
+  //   //   if (res.status === 201) {
+  //   //     // alert('You have successfully Registered. Check email for confirmation')
+  //   //     swal
+  //   //       .fire({
+  //   //         title: 'Registered Successfully!! Check email for confirmation.',
+  //   //         imageHeight: 200,
+  //   //         confirmButtonColor: '#3085d6',
+
+  //   //         confirmButtonText: 'Continue',
+  //   //         imageUrl:
+  //   //           'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066882/TechnoTweet/hurray_uptaef.png',
+  //   //         customClass: {
+  //   //           popup: 'animated fadeInDown faster',
+  //   //           confirmButton: 'animated bounceIn faster',
+  //   //           cancelButton: 'animated bounceIn faster',
+  //   //         },
+  //   //       })
+  //   //       .then((result) => {
+  //   //         if (result.isConfirmed) {
+  //   //           setFormData({
+  //   //             name: '',
+  //   //             email: '',
+  //   //             phoneno: '',
+  //   //             transactionId: '',
+  //   //             collegeName: '',
+  //   //             yearOfStudy: 'First year',
+  //   //             course: 'Both',
+  //   //             isDualBooted: '',
+  //   //             githubid:'',
+  //   //           })
+  //   //         }
+  //   //       })
+  //   //     return true
+  //   //   }
+  //   //   console.log(res)
+  //   //   return true
+  //   // } catch (err) {
+  //   //   console.log('err :')
+  //   //   console.log(err)
+  //   //   setisLoading(false)
+  //   //   if (
+  //   //     err.response.data.success === 'false' &&
+  //   //     err.response.data.message === 'Email Already Registered'
+  //   //   ) {
+  //   //     swal.fire({
+  //   //       title: 'Email already registered!!! Try using different email.',
+  //   //       imageUrl:
+  //   //         'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+  //   //       imageHeight: 200,
+  //   //       imageWidth: 200,
+  //   //       confirmButtonColor: '#3085d6',
+  //   //       confirmButtonText: 'OK',
+  //   //       animation: 'true',
+  //   //       customClass: {
+  //   //         popup: 'animated fadeInDown faster',
+  //   //         confirmButton: 'animated bounceIn faster',
+  //   //         cancelButton: 'animated bounceIn faster',
+  //   //       },
+  //   //     })
+  //   //     return false
+  //   //   } else if (
+  //   //     err.response.data.success === 'false' &&
+  //   //     err.response.data.message === 'Transaction id already used'
+  //   //   ) {
+  //   //     swal.fire({
+  //   //       title: 'Transaction ID already used. Try different one!!',
+  //   //       imageUrl:
+  //   //         'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+  //   //       imageHeight: 200,
+  //   //       imageWidth: 200,
+  //   //       confirmButtonColor: '#3085d6',
+  //   //       confirmButtonText: 'OK',
+  //   //       animation: 'true',
+  //   //       customClass: {
+  //   //         popup: 'animated fadeInDown faster',
+  //   //         confirmButton: 'animated bounceIn faster',
+  //   //         cancelButton: 'animated bounceIn faster',
+  //   //       },
+  //   //     })
+  //   //     return false
+  //   //   } else if (
+  //   //     err.response.data.success === 'false' &&
+  //   //     err.response.data.message === 'Invalid mobile number'
+  //   //   ) {
+  //   //     // console.log('catch');
+  //   //     swal.fire({
+  //   //       title: 'Invalid mobile number',
+  //   //       imageUrl:
+  //   //         'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+  //   //       imageHeight: 300,
+  //   //       imageWidth: 200,
+  //   //       confirmButtonColor: '#3085d6',
+  //   //       confirmButtonText: 'OK',
+  //   //       animation: 'true',
+  //   //       customClass: {
+  //   //         popup: 'animated fadeInDown faster',
+  //   //         confirmButton: 'animated bounceIn faster',
+  //   //         cancelButton: 'animated bounceIn faster',
+  //   //       },
+  //   //     })
+  //   //     return false
+  //   //   }
+  //   //   else{
+  //   //     swal.fire({
+  //   //       title: 'Something went wrong!! Try again after some time.',
+  //   //       imageUrl:
+  //   //         'https://res.cloudinary.com/dizrxbb27/image/upload/v1681066890/TechnoTweet/oops_qo58xk.png',
+  //   //       imageHeight: 300,
+  //   //       imageWidth: 200,
+  //   //       confirmButtonColor: '#3085d6',
+  //   //       confirmButtonText: 'OK',
+  //   //       animation: 'true',
+  //   //       customClass: {
+  //   //         popup: 'animated fadeInDown faster',
+  //   //         confirmButton: 'animated bounceIn faster',
+  //   //         cancelButton: 'animated bounceIn faster',
+  //   //       },
+  //   //     })
+  //   //     return false
+  //   //   }
+  //   // }
+  //   // const data =  API.getData(formData);
+  //   // setisLoading(false);
+  //   // sethurray(true)
+  // }catch(error){
+  //   console.log(error);
+  // }
+}
 
   const handleQR = (e) => {
     // e.preventDefault();
@@ -222,6 +240,7 @@ function Registration() {
               </div>
             </div>
             <form className='form' onSubmit={handleSubmit}>
+              <p style={{color:'red'}}>Note: Forms are closed!! See you at next event.</p>
               <div className='inputs'>
                 <label htmlFor='exampleInputPassword1'>Name</label>
                 <input
